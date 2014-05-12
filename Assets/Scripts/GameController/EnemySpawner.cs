@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour {
 
 	void SpawnEnemy(GameObject EnemyType){
 
-		Instantiate (EnemyType, new Vector2 (1, 0), this.transform.rotation);
+		Instantiate (EnemyType, new Vector2 (7, 0), this.transform.rotation);
 	}
 
 	void EnemySpawn(){
