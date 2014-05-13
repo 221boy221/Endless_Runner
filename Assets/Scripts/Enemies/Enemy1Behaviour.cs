@@ -7,6 +7,10 @@ public class Enemy1Behaviour : MonoBehaviour {
 
 	void Update(){
 		Movement ();
+
+		if (this.transform.position.x < -6.7) {
+			Destroy(this.gameObject);
+		}
 	}
 
 	void Movement(){
