@@ -177,6 +177,7 @@ GameObject:
   - 33: {fileID: 771796639}
   - 135: {fileID: 771796638}
   - 23: {fileID: 771796637}
+  - 54: {fileID: 771796641}
   m_Layer: 0
   m_Name: TestBullet2
   m_TagString: Bullet2
@@ -238,6 +239,21 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &771796641
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 771796636}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1260954533
 Prefab:
   m_ObjectHideFlags: 0
@@ -293,6 +309,7 @@ GameObject:
   - 33: {fileID: 1329173100}
   - 65: {fileID: 1329173099}
   - 23: {fileID: 1329173098}
+  - 54: {fileID: 1329173102}
   m_Layer: 0
   m_Name: TestBullet1
   m_TagString: Bullet1
@@ -354,6 +371,21 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!54 &1329173102
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1329173097}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1441305596
 GameObject:
   m_ObjectHideFlags: 0
