@@ -85,6 +85,8 @@ MonoBehaviour:
     movementSpeed: 2
     health: 100
     attackDamage: 0
+    scoreValue: 0
+  weakness: Bullet1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
