@@ -35,3 +35,5 @@ public class Enemy1Behaviour : MonoBehaviour {
 		Destroy (this.gameObject);
 	}
 }
+
+// Ga quads gebruiken als placeholder en 2d rigitbodies
