@@ -98,10 +98,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptEnemy:
     movementSpeed: 2
+    maxHealth: 0
     health: 100
     attackDamage: 0
     scoreValue: 0
-  weakness: Bullet1
+  weakness: {fileID: 100000, guid: 26135d7899d5a5046a7d0b137e21cf74, type: 2}
+  strength: {fileID: 100000, guid: 06590e4a5870da545b2036e8ced317e3, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

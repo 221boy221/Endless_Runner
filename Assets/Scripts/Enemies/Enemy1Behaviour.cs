@@ -5,7 +5,9 @@ public class Enemy1Behaviour : MonoBehaviour {
 
 	public GlobalEnemyScript scriptEnemy;
 
-	public string weakness; // <-- tag van kogel waar hij niet tegen kan.
+	public GameObject weakness; // <-- tag van kogel waar hij niet tegen kan.
+	public GameObject strength; // <-- tag van kogel waar hij sterker van wordt.
+
 
 	void Update(){
 		Movement ();
@@ -20,13 +22,18 @@ public class Enemy1Behaviour : MonoBehaviour {
 		transform.Translate (new Vector2(-scriptEnemy.movementSpeed,0)*Time.deltaTime,Space.World);
 	}
 	void OnTriggerEnter2D(Collider2D other){
-		Debug.Log ("any trigger");
-		if (other.gameObject.tag == weakness) {
-			Debug.Log("auw!!");
-            GetDamage(100);
+		if (other.gameObject.tag == weakness.gameObject.tag) {
+			Debug.Log ("auw!!");
+			GetDamage (100);
+		} else if (other.gameObject.tag == strength.gameObject.tag) {
+			Debug.Log("My power is rising!");
+			GetStronger();
 		}
 	}
 
+	void GetStronger(){
+
+	}
 	void GetDamage(float dmg){
         scriptEnemy.health -= dmg;
         if (scriptEnemy.health <= 0) {
