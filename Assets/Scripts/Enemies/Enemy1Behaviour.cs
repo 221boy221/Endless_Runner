@@ -8,6 +8,14 @@ public class Enemy1Behaviour : MonoBehaviour {
 	public GameObject weakness; // <-- tag van kogel waar hij niet tegen kan.
 	public GameObject strength; // <-- tag van kogel waar hij sterker van wordt.
 
+	enum transformOptions{health};
+
+	float maxHealthBegin;
+	
+	void Start(){
+
+		maxHealthBegin = scriptEnemy.maxHealth;
+	}
 
 	void Update(){
 		Movement ();
@@ -32,8 +40,21 @@ public class Enemy1Behaviour : MonoBehaviour {
 	}
 
 	void GetStronger(){
-
+		//TransformEnemy("health");
+		TransformEnemy(transformOptions.health.ToString());
 	}
+
+	void TransformEnemy(string transformType){
+		if (transformType == transformOptions.health.ToString()) {
+			if (scriptEnemy.maxHealth == maxHealthBegin) {
+				scriptEnemy.maxHealth = scriptEnemy.maxHealth * 2;
+				scriptEnemy.health = scriptEnemy.maxHealth;
+			}else if(scriptEnemy.health < scriptEnemy.maxHealth){
+				scriptEnemy.health += scriptEnemy.maxHealth / 4;
+			}
+		}
+	}
+
 	void GetDamage(float dmg){
         scriptEnemy.health -= dmg;
         if (scriptEnemy.health <= 0) {

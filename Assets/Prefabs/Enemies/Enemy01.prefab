@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptEnemy:
     movementSpeed: 2
-    maxHealth: 0
+    maxHealth: 100
     health: 100
     attackDamage: 0
     scoreValue: 0
