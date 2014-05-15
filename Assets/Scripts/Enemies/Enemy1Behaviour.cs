@@ -13,9 +13,7 @@ public class Enemy1Behaviour : MonoBehaviour {
 		if (this.transform.position.x < -6.7) {
 			Destroy(this.gameObject);
 		}
-		if (scriptEnemy.health <= 0) {
-			Death();
-		}
+		
 	}
 
 	virtual protected void Movement(){
@@ -23,12 +21,16 @@ public class Enemy1Behaviour : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == weakness) {
-			GetDamage(100);
+			Debug.Log("auw!!");
+            GetDamage(100);
 		}
 	}
 
 	void GetDamage(float dmg){
-		scriptEnemy.health -= dmg;
+        scriptEnemy.health -= dmg;
+        if (scriptEnemy.health <= 0) {
+			Death();
+		}
 	}
 
 	void Death(){
