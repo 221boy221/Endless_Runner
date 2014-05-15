@@ -22,14 +22,13 @@ public class Enemy1Behaviour : MonoBehaviour {
 		transform.Translate (new Vector2(-scriptEnemy.movementSpeed,0)*Time.deltaTime,Space.World);
 	}
 	void OnTriggerEnter2D(Collider2D other){
-		Debug.Log ("any trigger");
 		if (other.gameObject.tag == weakness) {
-			Debug.Log("auw!!");
+			GetDamage(100);
 		}
 	}
 
 	void GetDamage(float dmg){
-
+		scriptEnemy.health -= dmg;
 	}
 
 	void Death(){
