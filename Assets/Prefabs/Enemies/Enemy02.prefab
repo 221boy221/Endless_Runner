@@ -11,8 +11,8 @@ GameObject:
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
   - 61: {fileID: 6100000}
-  - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
+  - 50: {fileID: 5000000}
   m_Layer: 0
   m_Name: Enemy02
   m_TagString: Untagged
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptEnemy:
     movementSpeed: 3
-    maxHealth: 0
+    maxHealth: 50
     health: 50
     attackDamage: 0
     scoreValue: 0
