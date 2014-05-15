@@ -21,7 +21,8 @@ public class Enemy1Behaviour : MonoBehaviour {
 	virtual protected void Movement(){
 		transform.Translate (new Vector2(-scriptEnemy.movementSpeed,0)*Time.deltaTime,Space.World);
 	}
-	void OnTriggerEnter(Collider other){
+	void OnTriggerEnter2D(Collider2D other){
+		Debug.Log ("any trigger");
 		if (other.gameObject.tag == weakness) {
 			Debug.Log("auw!!");
 		}
