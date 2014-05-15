@@ -40,17 +40,17 @@ public class Enemy1Behaviour : MonoBehaviour {
 	}
 
 	void GetStronger(){
-		if (scriptEnemy.maxHealth == maxHealthBegin) {
-			TransformEnemy("health");
-		}else if(scriptEnemy.health < scriptEnemy.maxHealth){
-			scriptEnemy.health += scriptEnemy.maxHealth / 4;
-		}
+		TransformEnemy("health");
 	}
 
 	void TransformEnemy(string transformType){
 		if (transformType == "health") {
-			scriptEnemy.maxHealth = scriptEnemy.maxHealth * 2;
-			scriptEnemy.health = scriptEnemy.maxHealth;
+			if (scriptEnemy.maxHealth == maxHealthBegin) {
+				scriptEnemy.maxHealth = scriptEnemy.maxHealth * 2;
+				scriptEnemy.health = scriptEnemy.maxHealth;
+			}else if(scriptEnemy.health < scriptEnemy.maxHealth){
+				scriptEnemy.health += scriptEnemy.maxHealth / 4;
+			}
 		}
 	}
 
