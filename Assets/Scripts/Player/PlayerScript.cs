@@ -14,9 +14,6 @@ public class PlayerScript : MonoBehaviour {
     private Vector3 tempVector;
     private Vector3 tempVector2;
 
-    // Player movement
-    private float moveSpeed = 100.0f;
-
     private VariableScript ptrScriptVariable;
     public Camera c;
 

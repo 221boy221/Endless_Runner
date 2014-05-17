@@ -8,7 +8,7 @@ public class Enemy1Behaviour : MonoBehaviour {
 	public GameObject weakness; // <-- tag van kogel waar hij niet tegen kan.
 	public GameObject strength; // <-- tag van kogel waar hij sterker van wordt.
 
-	enum transformOptions{health};
+	enum transformOptions{health,speed};
 
 	float maxHealthBegin;
 	
@@ -35,13 +35,13 @@ public class Enemy1Behaviour : MonoBehaviour {
 			GetDamage (100);
 		} else if (other.gameObject.tag == strength.gameObject.tag) {
 			Debug.Log("My power is rising!");
-			GetStronger();
+			GetStronger(transformOptions.health.ToString());
 		}
 	}
 
-	void GetStronger(){
+	void GetStronger(string chosenTransformation){
 		//TransformEnemy("health");
-		TransformEnemy(transformOptions.health.ToString());
+		TransformEnemy(chosenTransformation);
 	}
 
 	void TransformEnemy(string transformType){
