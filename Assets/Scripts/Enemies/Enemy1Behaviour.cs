@@ -12,57 +12,56 @@ public class Enemy1Behaviour : MonoBehaviour {
 
 	float maxHealthBegin;
 	
-	void Start(){
+	void Start() {
 
 		maxHealthBegin = scriptEnemy.maxHealth;
 	}
 
-	void Update(){
-		Movement ();
+	void Update() {
+		Movement();
 
 		if (this.transform.position.x < -6.7) {
 			Destroy(this.gameObject);
 		}
-		
 	}
 
-	virtual protected void Movement(){
+	virtual protected void Movement() {
 		transform.Translate (new Vector2(-scriptEnemy.movementSpeed,0)*Time.deltaTime,Space.World);
 	}
-	void OnTriggerEnter2D(Collider2D other){
+	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.tag == weakness.gameObject.tag) {
-			Debug.Log ("auw!!");
+			Debug.Log ("Hit by weakness");
 			GetDamage (100);
 		} else if (other.gameObject.tag == strength.gameObject.tag) {
-			Debug.Log("My power is rising!");
+			Debug.Log("Hit by strength - My power is rising!");
 			GetStronger(transformOptions.health.ToString());
 		}
 	}
 
-	void GetStronger(string chosenTransformation){
+	void GetStronger(string chosenTransformation) {
 		//TransformEnemy("health");
 		TransformEnemy(chosenTransformation);
 	}
 
-	void TransformEnemy(string transformType){
+	void TransformEnemy(string transformType) {
 		if (transformType == transformOptions.health.ToString()) {
 			if (scriptEnemy.maxHealth == maxHealthBegin) {
 				scriptEnemy.maxHealth = scriptEnemy.maxHealth * 2;
 				scriptEnemy.health = scriptEnemy.maxHealth;
-			}else if(scriptEnemy.health < scriptEnemy.maxHealth){
+			} else if (scriptEnemy.health < scriptEnemy.maxHealth) {
 				scriptEnemy.health += scriptEnemy.maxHealth / 4;
 			}
 		}
 	}
 
-	void GetDamage(float dmg){
+	void GetDamage (float dmg) {
         scriptEnemy.health -= dmg;
         if (scriptEnemy.health <= 0) {
 			Death();
 		}
 	}
 
-	void Death(){
+	void Death() {
 		Destroy (this.gameObject);
 	}
 }

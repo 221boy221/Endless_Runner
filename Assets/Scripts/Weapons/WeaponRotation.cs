@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WeaponRotationScript : MonoBehaviour {
+public class WeaponRotation : MonoBehaviour {
 
 	//hieronder staan alle kogels van alle wapens.
 	public GameObject bullet1; 
