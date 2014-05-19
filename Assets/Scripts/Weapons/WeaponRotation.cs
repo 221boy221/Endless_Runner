@@ -6,7 +6,7 @@ public class WeaponRotation : MonoBehaviour {
 	//hieronder staan alle kogels van alle wapens.
 	public GameObject bullet1; 
 	private int currentWeapon = 1; //hiermee houd ik bij welk wapen de speler heeft
-    protected bool paused;
+    protected bool paused = false;
     Vector2 mousePos;
 
     void GamePause() {  // This function will run when the player presses esc, because of the GamePause.cs
