@@ -1,0 +1,103 @@
+fileFormatVersion: 2
+guid: 47d6ac34f7b460948a56d94e7a23e23c
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: First Enemy Evolutionline_0
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 329
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: First Enemy Evolutionline_1
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 67
+        width: 388
+        height: 293
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: First Enemy Evolutionline_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 282
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: First Enemy Evolutionline_3
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 292
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: First Enemy Evolutionline_4
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 67
+        width: 287
+        height: 155
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: First Enemy Evolutionline_5
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 67
+        width: 851
+        height: 571
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 

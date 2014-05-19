@@ -15,7 +15,7 @@ public class BulletsScript : MonoBehaviour {
 	}
 
 	// Removes the bullet on touch
-    public virtual void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
 		if (other.transform.tag != "Player") {
 			Destroy (this.gameObject);
 		}
