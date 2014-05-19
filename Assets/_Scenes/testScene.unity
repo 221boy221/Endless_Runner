@@ -742,7 +742,6 @@ MonoBehaviour:
   weapons:
   - {fileID: 1788536266}
   - {fileID: 2139509438}
-  - {fileID: 138233943}
   currentWeapon: 0
 --- !u!1 &1034642104
 GameObject:
