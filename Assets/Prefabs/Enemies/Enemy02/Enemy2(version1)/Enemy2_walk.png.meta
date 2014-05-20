@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 54a6ffbb3aa04c54b979c07718de780a
+guid: af9a7c4310d4fc3469a399118ddba580
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -48,82 +48,82 @@ TextureImporter:
     - name: Enemy2_walk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1831
-        width: 368
-        height: 200
+        x: 1
+        y: 425
+        width: 145
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1615
-        width: 360
-        height: 208
+        x: 148
+        y: 425
+        width: 143
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk_2
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1401
-        width: 355
-        height: 210
+        x: 294
+        y: 426
+        width: 142
+        height: 86
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk_3
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1187
-        width: 354
-        height: 213
+        x: 3
+        y: 340
+        width: 140
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk_4
       rect:
         serializedVersion: 2
-        x: 7
-        y: 968
-        width: 353
-        height: 213
+        x: 149
+        y: 340
+        width: 140
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk_5
       rect:
         serializedVersion: 2
-        x: 5
-        y: 752
-        width: 354
-        height: 211
+        x: 295
+        y: 340
+        width: 140
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 533
-        width: 361
-        height: 211
+        x: 2
+        y: 252
+        width: 141
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk_7
       rect:
         serializedVersion: 2
-        x: 1
-        y: 312
-        width: 360
-        height: 209
+        x: 147
+        y: 251
+        width: 143
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 95
-        width: 363
-        height: 202
+        x: 292
+        y: 250
+        width: 146
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
