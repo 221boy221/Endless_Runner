@@ -613,7 +613,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1025847795}
   - 114: {fileID: 1025847797}
-  - 114: {fileID: 1025847798}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -650,19 +649,6 @@ MonoBehaviour:
   - {fileID: 1788536266}
   - {fileID: 2139509438}
   currentWeapon: 0
---- !u!114 &1025847798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1025847794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a82b115e834a890499cc2d2904610aac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpVelocity: 10
-  touchingPlatform: 0
 --- !u!1 &1034642104
 GameObject:
   m_ObjectHideFlags: 0
