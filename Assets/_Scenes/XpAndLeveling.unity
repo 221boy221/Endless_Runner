@@ -668,7 +668,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 498844403}
   - 132: {fileID: 498844404}
-  - 114: {fileID: 498844405}
   m_Layer: 0
   m_Name: UI_PlayerSkillpoints
   m_TagString: PlayerSkillpointsUI
@@ -710,17 +709,6 @@ GUIText:
     rgba: 4294967295
   m_PixelCorrect: 1
   m_RichText: 1
---- !u!114 &498844405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 498844402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 400679522a7dacb419f34412da9c2d80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &571690518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1011,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1085683468}
-  - 114: {fileID: 1085683467}
   m_Layer: 0
   m_Name: UI_UpgradeMenu
   m_TagString: UpgradeMenu
@@ -1031,17 +1018,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1085683467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1085683466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12468a983b7c5f94fb34b46976dbe3e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1085683468
 Transform:
   m_ObjectHideFlags: 0
@@ -1062,7 +1038,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1102756395}
   - 132: {fileID: 1102756394}
-  - 114: {fileID: 1102756393}
   m_Layer: 0
   m_Name: UI_PlayerLvl
   m_TagString: PlayerLvlUI
@@ -1070,17 +1045,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1102756393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1102756392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526f4a40ded8cdf42a9986302a9b981c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!132 &1102756394
 GUIText:
   m_ObjectHideFlags: 0
@@ -1124,7 +1088,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1118226222}
   - 132: {fileID: 1118226224}
-  - 114: {fileID: 1118226223}
   m_Layer: 0
   m_Name: UI_PlayerXP
   m_TagString: PlayerXPUI
@@ -1143,17 +1106,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 468829109}
---- !u!114 &1118226223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1118226221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04e4676c699cc3b4bb8b2653f419ba54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!132 &1118226224
 GUIText:
   m_ObjectHideFlags: 0
@@ -1186,7 +1138,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1434902327}
   - 132: {fileID: 1434902326}
-  - 114: {fileID: 1434902328}
   m_Layer: 0
   m_Name: UI_PlayerHealth
   m_TagString: PlayerHealthUI
@@ -1228,17 +1179,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 468829109}
---- !u!114 &1434902328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1434902325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 749cc815d2d638c47840f0a6ca914ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1534655571
 GameObject:
   m_ObjectHideFlags: 0
