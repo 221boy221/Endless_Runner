@@ -4,9 +4,13 @@ using System.Collections;
 public class WeaponRotation : MonoBehaviour {
 
 	//hieronder staan alle kogels van alle wapens.
-	public GameObject bullet1; 
-	private int currentWeapon = 1; //hiermee houd ik bij welk wapen de speler heeft
+	public GameObject bullet1;
+    
+    private float fireRate = 0.2f;
+    private float nextFireTime;
+
     protected bool paused = false;
+
     Vector2 mousePos;
 
     void GamePause() {  // This function will run when the player presses esc, because of the GamePause.cs
@@ -27,16 +31,15 @@ public class WeaponRotation : MonoBehaviour {
 		    transform.rotation = Quaternion.Euler (new Vector3 (0, 0, angle)); // hier stop ik de rotatie in actie door de waarde van de rotation te veranderen 
 
 		    //Hieronder is een placeholder voor het schieten. Er moet een cooldown etc etc komen maar het was alleen voor het uittesten.
-		    if (Input.GetKeyDown (KeyCode.Mouse0)){
-			    SchootBullet(currentWeapon);
+            if (Input.GetMouseButton(0) && Time.time > nextFireTime) {
+			    SchootBullet();
 		    }
         }
 	}
 	
-	void SchootBullet(int weapon) {
-        if (weapon == 1) {
-            Instantiate (bullet1, this.transform.position, this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^  
-        } 
+	void SchootBullet() {
+        nextFireTime = Time.time + fireRate;
+        Instantiate (bullet1, this.transform.position, this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^  
 	}
 	
 }
