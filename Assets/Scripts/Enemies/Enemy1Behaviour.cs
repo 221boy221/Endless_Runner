@@ -52,6 +52,9 @@ public class Enemy1Behaviour : MonoBehaviour {
 				scriptEnemy.health += scriptEnemy.maxHealth / 4;
 			}
 		}
+		if (transformType == transformOptions.speed.ToString ()) {
+
+		}
 	}
 
 	void GetDamage (float dmg) {
