@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class movingBack : MonoBehaviour {
+
 	public float speed = 0;
 	public static movingBack current;
 
@@ -20,4 +21,5 @@ public class movingBack : MonoBehaviour {
 
 		renderer.material.mainTextureOffset = new Vector2(pos,0);
 	}
+	
 }
