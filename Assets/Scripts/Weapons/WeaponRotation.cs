@@ -14,7 +14,7 @@ public class WeaponRotation : MonoBehaviour {
     Vector2 mousePos;
 
     void GamePause() {  // This function will run when the player presses esc, because of the GamePause.cs
-        paused = (paused == false) ? true : false;  // This is basically: if (paused = true) paused = false; else paused = true;
+        paused = (!paused) ? true : false;  // This is basically: if (paused = true) paused = false; else paused = true;
     }
 
 	void Update () {
