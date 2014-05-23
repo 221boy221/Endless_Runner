@@ -1,21 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Enemy1Behaviour : MonoBehaviour {
+public class EnemyBehaviour : MonoBehaviour {
 
 	public GlobalEnemyScript scriptEnemy;
 
+	public GameObject nextTransform;
+
 	public GameObject weakness; // <-- tag van kogel waar hij niet tegen kan.
 	public GameObject strength; // <-- tag van kogel waar hij sterker van wordt.
-
-	enum transformOptions{health,speed};
-
-	float maxHealthBegin;
-	
-	void Start() {
-
-		maxHealthBegin = scriptEnemy.maxHealth;
-	}
 
 	void Update() {
 		Movement();
@@ -34,26 +27,19 @@ public class Enemy1Behaviour : MonoBehaviour {
 			GetDamage (100);
 		} else if (other.gameObject.tag == strength.gameObject.tag) {
 			Debug.Log("Hit by strength - My power is rising!");
-			GetStronger(transformOptions.health.ToString());
+			GetStronger();
 		}
 	}
 
-	void GetStronger(string chosenTransformation) {
+	void GetStronger() {
 		//TransformEnemy("health");
-		TransformEnemy(chosenTransformation);
+		TransformEnemy();
 	}
 
-	void TransformEnemy(string transformType) {
-		if (transformType == transformOptions.health.ToString()) {
-			if (scriptEnemy.maxHealth == maxHealthBegin) {
-				scriptEnemy.maxHealth = scriptEnemy.maxHealth * 2;
-				scriptEnemy.health = scriptEnemy.maxHealth;
-			} else if (scriptEnemy.health < scriptEnemy.maxHealth) {
-				scriptEnemy.health += scriptEnemy.maxHealth / 4;
-			}
-		}
-		if (transformType == transformOptions.speed.ToString ()) {
-
+	void TransformEnemy() {
+		if (nextTransform != null) {
+			Instantiate (nextTransform, new Vector2(this.transform.position.x,this.transform.position.y +0.17f), this.transform.rotation);
+			Destroy (this.gameObject);
 		}
 	}
 

@@ -19,7 +19,9 @@ public class EnemySpawner : MonoBehaviour {
 	void EnemySpawn() {
 
 		int chooseEnemyToSpawn = Random.Range(1, 3);
+
 		Debug.Log(chooseEnemyToSpawn);
+
 		if (chooseEnemyToSpawn == 1) {
 			SpawnEnemy(enemy1);
 		} else if (chooseEnemyToSpawn == 2) {

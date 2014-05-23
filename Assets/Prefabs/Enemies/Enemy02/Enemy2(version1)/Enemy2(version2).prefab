@@ -10,12 +10,12 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 95: {fileID: 9500000}
-  - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
+  - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Enemy1(version1)
-  m_TagString: Enemy
+  m_Name: Enemy2(version2)
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.48580837, y: .289588094, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 13.1186705, y: -1.32501793, z: 0}
+  m_LocalScale: {x: .400000006, y: .400000006, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!50 &5000000
@@ -66,7 +66,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c09f285c0534de640aa08b5ee0e3e152, type: 2}
+  m_Controller: {fileID: 9100000, guid: 85fafc19d6ad2b0499f7939204a9fa5b, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
@@ -87,9 +87,9 @@ MonoBehaviour:
     health: 100
     attackDamage: 0
     scoreValue: 0
-  nextTransform: {fileID: 100000, guid: cccb1a0cbb877ec43aa56d916fa7a743, type: 2}
-  weakness: {fileID: 100000, guid: 26135d7899d5a5046a7d0b137e21cf74, type: 2}
-  strength: {fileID: 100000, guid: 06590e4a5870da545b2036e8ced317e3, type: 2}
+  nextTransform: {fileID: 0}
+  weakness: {fileID: 100000, guid: 06590e4a5870da545b2036e8ced317e3, type: 2}
+  strength: {fileID: 100000, guid: 26135d7899d5a5046a7d0b137e21cf74, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -111,7 +111,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 120aa5dc2f8092a45902096124935bce, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3be00c1a6723b24bba88a94a9237955, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

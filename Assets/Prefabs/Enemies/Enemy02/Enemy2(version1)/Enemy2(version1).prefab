@@ -79,16 +79,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26a528250a460584e9616b152950af8d, type: 3}
+  m_Script: {fileID: 11500000, guid: a8bf84a282aba8948b0bce33eaf0c125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scriptEnemy:
     movementSpeed: 3
-    maxMovementSpeed: 0
-    maxHealth: 50
     health: 50
     attackDamage: 0
     scoreValue: 0
+  nextTransform: {fileID: 100000, guid: 17bc942dda8d0ca488b27202dba04c50, type: 2}
   weakness: {fileID: 100000, guid: 06590e4a5870da545b2036e8ced317e3, type: 2}
   strength: {fileID: 100000, guid: 26135d7899d5a5046a7d0b137e21cf74, type: 2}
 --- !u!212 &21200000
