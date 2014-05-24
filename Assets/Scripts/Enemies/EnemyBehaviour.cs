@@ -24,7 +24,8 @@ public class EnemyBehaviour : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.tag == weakness.gameObject.tag) {
 			Debug.Log ("Hit by weakness");
-			GetDamage (100);
+			//BulletsScript bs = other.GetComponent<BulletsScript>() as BulletsScript);
+			GetDamage(BulletsScript.damage);
 		} else if (other.gameObject.tag == strength.gameObject.tag) {
 			Debug.Log("Hit by strength - My power is rising!");
 			GetStronger();
