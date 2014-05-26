@@ -4,7 +4,9 @@ using System.Collections;
 public class MainMenu:MonoBehaviour {
 
 	[SerializeField] private Texture logo;
-	[SerializeField] private GUIStyle buttonStyle;
+	[SerializeField] private GUIStyle playStyle;
+	[SerializeField] private GUIStyle instructionsStyle;
+	[SerializeField] private GUIStyle quitStyle;
 
 	private HowToPlay howToPlay;
 	private bool opened = true;
@@ -21,12 +23,11 @@ public class MainMenu:MonoBehaviour {
 		GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
 		GUI.DrawTexture(new Rect(960 - logo.width / 2 * 0.65f, 25, logo.width * 0.65f, logo.height * 0.65f), logo);
 
-		if(GUI.Button(new Rect(610, 520, 700, 60), new GUIContent("Play"), buttonStyle)) {		
+		if(GUI.Button(new Rect(610, 520, 700, 60), new GUIContent(), playStyle)) {		
             Application.LoadLevel("testScene"); // Run game
-            
-		} else if(GUI.Button(new Rect(610, 590, 700, 60), new GUIContent("How to play"), buttonStyle)) {
+		} else if(GUI.Button(new Rect(610, 590, 700, 60), new GUIContent(), instructionsStyle)) {
 			howToPlay.Open();   // Opens the HowToPlay script
-		} else if(GUI.Button(new Rect(610, 660, 700, 60), new GUIContent("Quit"), buttonStyle)) {
+		} else if(GUI.Button(new Rect(610, 660, 700, 60), new GUIContent(), quitStyle)) {
 			Application.Quit(); // Quits the game
 		}
     }
