@@ -10,6 +10,14 @@ public class EnemyBehaviour : MonoBehaviour {
 	public GameObject weakness; // <-- tag van kogel waar hij niet tegen kan.
 	public GameObject strength; // <-- tag van kogel waar hij sterker van wordt.
 
+    private PlayerXP playerXP;
+
+	float maxHealthBegin;
+	
+	void Awake() {
+        playerXP = GameObject.FindGameObjectWithTag("PlayerXPUI").GetComponent<PlayerXP>();
+	}
+
 	void Update() {
 		Movement();
 
@@ -48,6 +56,7 @@ public class EnemyBehaviour : MonoBehaviour {
         scriptEnemy.health -= dmg;
         if (scriptEnemy.health <= 0) {
 			Death();
+            playerXP.IncreaseValue(100);
 		}
 	}
 

@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53fa5233431730e458237eb442cf3676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireRate: .200000003
   bullet1: {fileID: 100000, guid: 06590e4a5870da545b2036e8ced317e3, type: 2}
 --- !u!23 &125251326
 Renderer:
@@ -496,7 +497,7 @@ GameObject:
   - 114: {fileID: 468829107}
   m_Layer: 0
   m_Name: GameController
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,6 +631,7 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+  hasSkillpoints: 0
 --- !u!114 &468829108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,7 +709,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!114 &498844405
@@ -718,9 +720,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 498844402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 400679522a7dacb419f34412da9c2d80, type: 3}
+  m_Script: {fileID: 11500000, guid: 52827744786206146957585130d9a408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkillpointsText: {fileID: 0}
 --- !u!1 &571690518
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53fa5233431730e458237eb442cf3676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireRate: .200000003
   bullet1: {fileID: 100000, guid: 26135d7899d5a5046a7d0b137e21cf74, type: 2}
 --- !u!23 &571690521
 Renderer:
@@ -1023,7 +1027,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1085683468}
-  - 114: {fileID: 1085683467}
   m_Layer: 0
   m_Name: UI_UpgradeMenu
   m_TagString: UpgradeMenu
@@ -1031,17 +1034,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1085683467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1085683466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12468a983b7c5f94fb34b46976dbe3e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1085683468
 Transform:
   m_ObjectHideFlags: 0
@@ -1078,7 +1070,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1102756392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526f4a40ded8cdf42a9986302a9b981c, type: 3}
+  m_Script: {fileID: 11500000, guid: ec941a57d7a05c247996689073b1f1a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!132 &1102756394
@@ -1101,7 +1093,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1102756395
@@ -1151,7 +1143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1118226221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04e4676c699cc3b4bb8b2653f419ba54, type: 3}
+  m_Script: {fileID: 11500000, guid: f91cf0c46873ef64ca88bbbc173746b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!132 &1118226224
@@ -1174,7 +1166,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!1 &1434902325
@@ -1214,7 +1206,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1434902327
@@ -1236,9 +1228,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1434902325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 749cc815d2d638c47840f0a6ca914ca2, type: 3}
+  m_Script: {fileID: 11500000, guid: 96aeb58ac33f9654ebfa2906b3cecb60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &1534655571
 GameObject:
   m_ObjectHideFlags: 0
