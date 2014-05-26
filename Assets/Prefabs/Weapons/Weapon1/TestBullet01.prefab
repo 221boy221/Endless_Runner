@@ -81,11 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 1
-<<<<<<< HEAD
   speed: 10
-=======
-  speed: 9
->>>>>>> f2ce2e6a0f709b057c349b9f4e268466a9138e41
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
