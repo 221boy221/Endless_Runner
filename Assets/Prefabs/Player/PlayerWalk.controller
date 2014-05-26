@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Player_walk_0
+  m_Name: PlayerWalk
   serializedVersion: 2
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -29,7 +29,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 185cc6ad9dda26c4798e7c4fc8cefa71, type: 2}
+  - {fileID: 7400000, guid: b3392fc891b81ae498f02ad536226cbc, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
