@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: c5f82245daa9be94f94f5e92947014a0
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: The_Weapons_verbeterd_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 296
+        width: 173
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 298
+        width: 190
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_2
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 287
+        width: 150
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 305
+        width: 146
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 188
+        width: 173
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_5
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 188
+        width: 189
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_6
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 191
+        width: 150
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_7
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 190
+        width: 146
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 106
+        width: 200
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_9
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 106
+        width: 208
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_10
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 87
+        width: 192
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 200
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 13
+        width: 208
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: The_Weapons_verbeterd_13
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 0
+        width: 192
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

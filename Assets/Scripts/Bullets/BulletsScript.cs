@@ -5,8 +5,8 @@ public class BulletsScript : MonoBehaviour {
 
 	public float destroyTime;
 	public float speed;
-	public static float damage = 50;
-	
+	public static float damage = 50.0f;
+
 	void Start() {
 		Destroy (gameObject, destroyTime); // gameObject inplaats van this want met this verwijder je het script.  Bij de destroy functie geef je wat hij weg moet halen en wanneer.
 	}
