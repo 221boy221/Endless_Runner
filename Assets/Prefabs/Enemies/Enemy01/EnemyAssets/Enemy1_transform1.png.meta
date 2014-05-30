@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 3660906e7660b0b4db510385d842f09b
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Enemy1_transform1_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 892
+        width: 131
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_transform1_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 895
+        width: 144
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_transform1_2
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 899
+        width: 153
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_transform1_3
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 902
+        width: 159
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_transform1_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 762
+        width: 161
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_transform1_5
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 757
+        width: 207
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_transform1_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 756
+        width: 206
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_transform1_7
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 755
+        width: 204
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_transform1_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 612
+        width: 200
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_transform1_9
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 607
+        width: 191
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

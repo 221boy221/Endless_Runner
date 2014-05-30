@@ -12,11 +12,15 @@ public class EnemyBehaviour : MonoBehaviour {
 
     private PlayerXP playerXP;
 
+	Animator anim;
+
 	float maxHealthBegin;
 	
 	void Awake() {
         playerXP = GameObject.FindGameObjectWithTag("PlayerXPUI").GetComponent<PlayerXP>();
+		anim = GetComponent<Animator>();
 	}
+
 
 	void Update() {
 		Movement();
@@ -42,14 +46,17 @@ public class EnemyBehaviour : MonoBehaviour {
 
 	void GetStronger() {
 		//TransformEnemy("health");
-		TransformEnemy();
+		if (nextTransform != null) {
+			anim.Play("EnemyTransformation1");
+			scriptEnemy.movementSpeed = 1.5f;
+			Invoke ("TransformEnemy", 1f);
+		}
 	}
 
 	void TransformEnemy() {
-		if (nextTransform != null) {
-			Instantiate (nextTransform, new Vector2(this.transform.position.x,this.transform.position.y +0.17f), this.transform.rotation);
-			Destroy (this.gameObject);
-		}
+
+		Instantiate (nextTransform, new Vector2(this.transform.position.x,this.transform.position.y +0.17f), this.transform.rotation);
+		Destroy (this.gameObject);
 	}
 
 	void GetDamage (float dmg) {
