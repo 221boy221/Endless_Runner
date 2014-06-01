@@ -6,8 +6,22 @@ public class WeaponRotation : MonoBehaviour {
     private float nextFireTime;
     public float fireRate = 0.2f;
     protected bool paused = false;
+
+	// Reload variables
+	private float maxAmmo = 5;
+	private float ammo;
+	private float reloadTime = 1.5f;
+	private float counter;
+	private bool reloading = false;
+
     public GameObject bullet1;//hieronder staan alle kogels van alle wapens.
     Vector2 mousePos;
+
+
+	void Awake(){
+
+		ammo = maxAmmo;
+	}
 
     void GamePause() {  // This function will run when the player presses esc, because of the GamePause.cs
         paused = (!paused) ? true : false;  // This is basically: if (paused = true) paused = false; else paused = true;
@@ -28,14 +42,36 @@ public class WeaponRotation : MonoBehaviour {
 
             // Shooting the projectiles. It has a cooldown and you can hold down the mouse button this way.
             if (Input.GetMouseButton(0) && Time.time > nextFireTime) {
-			    SchootBullet();
+				if(ammo > 0){
+					SchootBullet();
+				}else if(ammo <= 0 && !reloading){
+					Reload();
+				}
 		    }
+			// tijd dat de speler aan het reloaden is. De groter de var reloadSpeed. De langer de tijd van reloaden.
+			if(reloading)
+			{
+				counter -= Time.deltaTime;
+				Debug.Log(counter);
+				if(counter <= 0)
+				{
+					ammo = maxAmmo;
+					reloading = false;
+				}
+			}
         }
 	}
 	
 	void SchootBullet() {
         nextFireTime = Time.time + fireRate; // This adds the delay
+		ammo --;
+		Debug.Log (ammo);
         Instantiate (bullet1,new Vector3(transform.position.x,transform.position.y, transform.position.z + 0.1f), this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^  
 	
+	}
+
+	void Reload (){
+		reloading = true;
+		counter = reloadTime;
 	}
 }

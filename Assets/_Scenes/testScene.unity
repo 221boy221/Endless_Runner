@@ -1141,6 +1141,10 @@ Prefab:
       propertyPath: bullet1
       value: 
       objectReference: {fileID: 100000, guid: c325aa60bad0d9a4e82b444114c110b3, type: 2}
+    - target: {fileID: 100006, guid: 72d25f1b599beb7488730318085ce97a, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72d25f1b599beb7488730318085ce97a, type: 2}
   m_RootGameObject: {fileID: 1687173533}
@@ -1497,9 +1501,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1687173534}
   - 114: {fileID: 1687173535}
+  - 61: {fileID: 1687173536}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1534,6 +1539,17 @@ MonoBehaviour:
   - {fileID: 11654319}
   - {fileID: 423462505}
   currentWeapon: 0
+--- !u!61 &1687173536
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1687173533}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1780864391
 GameObject:
   m_ObjectHideFlags: 0
