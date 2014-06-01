@@ -11,6 +11,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	public GameObject strength; // <-- tag van kogel waar hij sterker van wordt.
 
     private PlayerXP playerXP;
+	private PlayerHealth playerHealth;
 
 	Animator anim;
 
@@ -18,6 +19,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	
 	void Awake() {
         playerXP = GameObject.FindGameObjectWithTag("PlayerXPUI").GetComponent<PlayerXP>();
+		playerHealth = GameObject.FindGameObjectWithTag("PlayerHealthUI").GetComponent<PlayerHealth>();
 		anim = GetComponent<Animator>();
 	}
 
@@ -42,6 +44,10 @@ public class EnemyBehaviour : MonoBehaviour {
 			Debug.Log("Hit by strength - My power is rising!");
 			GetStronger();
 		}
+
+		if (other.gameObject.tag == "Player") {
+			Attack();
+		}
 	}
 
 	void GetStronger() {
@@ -65,6 +71,11 @@ public class EnemyBehaviour : MonoBehaviour {
 			Death();
             playerXP.IncreaseValue(100);
 		}
+	}
+
+	void Attack (){
+		Debug.Log (scriptEnemy.attackDamage + " habba habba");
+		playerHealth.TakeDamage (scriptEnemy.attackDamage);
 	}
 
 	void Death() {
