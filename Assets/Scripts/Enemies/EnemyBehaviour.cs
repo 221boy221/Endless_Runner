@@ -69,7 +69,7 @@ public class EnemyBehaviour : MonoBehaviour {
         scriptEnemy.health -= dmg;
         if (scriptEnemy.health <= 0) {
 			Death();
-            playerXP.IncreaseValue(100);
+            playerXP.IncreaseValue(scriptEnemy.xpValue);
 		}
 	}
 
