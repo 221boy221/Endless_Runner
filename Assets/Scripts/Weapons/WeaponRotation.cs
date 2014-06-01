@@ -35,7 +35,7 @@ public class WeaponRotation : MonoBehaviour {
 	
 	void SchootBullet() {
         nextFireTime = Time.time + fireRate; // This adds the delay
-        Instantiate (bullet1, this.transform.position, this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^  
-	}
+        Instantiate (bullet1,new Vector3(transform.position.x,transform.position.y, transform.position.z + 0.1f), this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^  
 	
+	}
 }
