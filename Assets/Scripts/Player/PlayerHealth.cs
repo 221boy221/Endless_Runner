@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerHealth : MonoBehaviour 
-{
+public class PlayerHealth : MonoBehaviour {
 
-    public float health = 100f;
+    private float health = 100.0f;
 
     private GUIText healthText;
 
@@ -25,5 +24,9 @@ public class PlayerHealth : MonoBehaviour
     void Dead() {
         Debug.Log("You are dead.");
         Application.LoadLevel("gameOver");
+    }
+
+    public float Health {
+        get { return health; }
     }
 }
