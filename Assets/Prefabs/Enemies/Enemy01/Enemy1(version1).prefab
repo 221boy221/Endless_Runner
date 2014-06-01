@@ -13,6 +13,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Enemy1(version1)
   m_TagString: Enemy
@@ -91,6 +92,20 @@ MonoBehaviour:
   nextTransform: {fileID: 100000, guid: cccb1a0cbb877ec43aa56d916fa7a743, type: 2}
   weakness: {fileID: 100000, guid: 26135d7899d5a5046a7d0b137e21cf74, type: 2}
   strength: {fileID: 100000, guid: 06590e4a5870da545b2036e8ced317e3, type: 2}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a3fb1bbde78d4428f4ee13cd9fd055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpBar: {fileID: 2800000, guid: eeb6a77e92df67e4c917ed979d23d445, type: 3}
+  hbBackground: {fileID: 2800000, guid: a005052a00b9a164da3d11b419ee8de8, type: 3}
+  hpOverlay: {fileID: 2800000, guid: 84d3804eb8348144ba36c90f4e5ed373, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

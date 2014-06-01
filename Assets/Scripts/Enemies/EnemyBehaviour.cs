@@ -14,8 +14,6 @@ public class EnemyBehaviour : MonoBehaviour {
 	private PlayerHealth playerHealth;
 
 	Animator anim;
-
-	float maxHealthBegin;
 	
 	void Awake() {
         playerXP = GameObject.FindGameObjectWithTag("PlayerXPUI").GetComponent<PlayerXP>();
@@ -77,6 +75,11 @@ public class EnemyBehaviour : MonoBehaviour {
 		Debug.Log (scriptEnemy.attackDamage + " habba habba");
 		playerHealth.TakeDamage (scriptEnemy.attackDamage);
 	}
+
+    public float Health {
+        get { return scriptEnemy.health; }
+    }
+
 
 	void Death() {
 		Destroy (this.gameObject);

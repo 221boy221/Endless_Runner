@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 03a3fb1bbde78d4428f4ee13cd9fd055
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - hpBar: {fileID: 2800000, guid: eeb6a77e92df67e4c917ed979d23d445, type: 3}
+  - hbBackground: {fileID: 2800000, guid: a005052a00b9a164da3d11b419ee8de8, type: 3}
+  - hpOverlay: {fileID: 2800000, guid: 84d3804eb8348144ba36c90f4e5ed373, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

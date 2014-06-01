@@ -6,5 +6,4 @@ public class GlobalEnemyScript{
 	public float attackDamage;
 	public float scoreValue;
 	public int xpValue;
-
 }
