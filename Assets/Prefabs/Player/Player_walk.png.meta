@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 80fbd264429045d4d8883b944c467846
+guid: 88b1dc7134a237a46827267ac6f0ce85
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -49,99 +49,99 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 419
+        y: 414
         width: 75
-        height: 93
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Player_walk_1
       rect:
         serializedVersion: 2
         x: 77
-        y: 418
+        y: 413
         width: 75
-        height: 93
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Player_walk_2
       rect:
         serializedVersion: 2
         x: 153
-        y: 417
+        y: 412
         width: 74
-        height: 94
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Player_walk_3
       rect:
         serializedVersion: 2
         x: 229
-        y: 415
+        y: 410
         width: 74
-        height: 96
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Player_walk_4
       rect:
         serializedVersion: 2
         x: 317
-        y: 395
-        width: 50
-        height: 114
+        y: 390
+        width: 56
+        height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Player_walk_5
       rect:
         serializedVersion: 2
-        x: 394
-        y: 395
-        width: 49
-        height: 114
+        x: 393
+        y: 390
+        width: 56
+        height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Player_walk_6
       rect:
         serializedVersion: 2
-        x: 19
-        y: 277
-        width: 44
-        height: 114
+        x: 13
+        y: 267
+        width: 56
+        height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Player_walk_7
       rect:
         serializedVersion: 2
         x: 88
-        y: 277
-        width: 51
-        height: 114
+        y: 267
+        width: 57
+        height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Player_walk_8
       rect:
         serializedVersion: 2
         x: 153
-        y: 297
+        y: 287
         width: 74
-        height: 96
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Player_walk_9
       rect:
         serializedVersion: 2
         x: 229
-        y: 299
+        y: 289
         width: 74
-        height: 94
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Player_walk_10
       rect:
         serializedVersion: 2
         x: 304
-        y: 300
+        y: 290
         width: 75
-        height: 93
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
