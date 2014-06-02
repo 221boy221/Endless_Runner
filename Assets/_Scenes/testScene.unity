@@ -563,9 +563,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a3fb1bbde78d4428f4ee13cd9fd055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpBar: {fileID: 2800000, guid: eeb6a77e92df67e4c917ed979d23d445, type: 3}
-  hbBackground: {fileID: 2800000, guid: a005052a00b9a164da3d11b419ee8de8, type: 3}
-  hpOverlay: {fileID: 2800000, guid: 84d3804eb8348144ba36c90f4e5ed373, type: 3}
+  hpBar: {fileID: 2800000, guid: 8555a86b83fba2d46a0c08b7ceebe54f, type: 3}
+  hbBackground: {fileID: 2800000, guid: 41ab737d0b7674146b83cd59471f2843, type: 3}
+  hpOverlay: {fileID: 2800000, guid: 7019b7a137b8b0c42a393ca05f511a45, type: 3}
 --- !u!114 &642311334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1679,13 +1679,13 @@ MonoBehaviour:
   buttonStyle:
     m_Name: 
     m_Normal:
-      m_Background: {fileID: 0}
+      m_Background: {fileID: 2800000, guid: df13e02081e7e514eb75eac14ded6d3f, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
-      m_Background: {fileID: 0}
+      m_Background: {fileID: 2800000, guid: df13e02081e7e514eb75eac14ded6d3f, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
-      m_Background: {fileID: 0}
+      m_Background: {fileID: 2800000, guid: df13e02081e7e514eb75eac14ded6d3f, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
@@ -1731,9 +1731,9 @@ MonoBehaviour:
     m_TextClipping: 0
     m_ImagePosition: 0
     m_ContentOffset: {x: 0, y: 0}
-    m_FixedWidth: 0
-    m_FixedHeight: 0
-    m_StretchWidth: 1
+    m_FixedWidth: 75
+    m_FixedHeight: 75
+    m_StretchWidth: 0
     m_StretchHeight: 0
   labelStyle:
     m_Name: 

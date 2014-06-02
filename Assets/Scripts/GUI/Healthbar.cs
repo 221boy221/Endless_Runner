@@ -27,13 +27,14 @@ public class Healthbar : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		GUI.DrawTexture(new Rect(position.x - 45, (Screen.height + -position.y) - 75, hbBackground.width / 7, hbBackground.height / 5), hbBackground);
+        //GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
+        GUI.DrawTexture(new Rect(position.x - 45, (Screen.height - position.y) + (position.y / 2), hbBackground.width / 7, hbBackground.height / 5), hbBackground);
         if (gameObject.tag == "Player") {
-            GUI.DrawTexture(new Rect((position.x + 16) - 45, ((Screen.height + -position.y) + 3) - 75, (hpBar.width / 7) / (maxHealth / playerHealth.Health), hpBar.height / 5), hpBar);
+            GUI.DrawTexture(new Rect(position.x - 40, ((Screen.height - position.y) + (position.y / 2) + 1), (hpBar.width / 7) / (maxHealth / playerHealth.Health), hpBar.height / 5), hpBar);
         } else {
-            GUI.DrawTexture(new Rect((position.x + 16) - 45, ((Screen.height + -position.y) + 3) - 75, (hpBar.width / 7) / (maxHealth / enemyHealth.Health), hpBar.height / 5), hpBar);
+            GUI.DrawTexture(new Rect(position.x - 40, ((Screen.height - position.y) + (position.y / 2) + 1), (hpBar.width / 7) / (maxHealth / enemyHealth.Health), hpBar.height / 5), hpBar);
         }
-        
-		GUI.DrawTexture(new Rect(position.x - 45, (Screen.height + -position.y) - 75, hpOverlay.width / 7, hpOverlay.height / 5), hpOverlay);
+
+        GUI.DrawTexture(new Rect(position.x - 45, ((Screen.height - position.y) + (position.y / 2)), hpOverlay.width / 7, hpOverlay.height / 5), hpOverlay);
 	}
 }
