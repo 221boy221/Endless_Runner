@@ -13,6 +13,8 @@ public class EnemyBehaviour : MonoBehaviour {
     private PlayerXP playerXP;
 	private PlayerHealth playerHealth;
 
+	private bool tfm = false;
+
 	Animator anim;
 	
 	void Awake() {
@@ -49,17 +51,23 @@ public class EnemyBehaviour : MonoBehaviour {
 	}
 
 	void GetStronger() {
-		//TransformEnemy("health");
-		if (nextTransform != null) {
+
+		if (nextTransform != null && !tfm) {
+
+			tfm = true;
+			Vector2 offset = new Vector2(transform.position.x,transform.position.y + 0.17f);
+			transform.position = offset;
+
 			anim.Play("EnemyTransformation1");
+			audio.Play ();
 			scriptEnemy.movementSpeed = 1.5f;
 			Invoke ("TransformEnemy", 1f);
+
 		}
 	}
 
 	void TransformEnemy() {
-
-		Instantiate (nextTransform, new Vector2(this.transform.position.x,this.transform.position.y +0.17f), this.transform.rotation);
+		Instantiate (nextTransform, this.transform.position, this.transform.rotation);
 		Destroy (this.gameObject);
 	}
 

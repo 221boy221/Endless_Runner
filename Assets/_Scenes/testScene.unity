@@ -1450,6 +1450,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8200002, guid: 16492fb9ca215084387bf1cdec6ee0cc, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 29de0cde34cbf904cad9c33877e07360, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16492fb9ca215084387bf1cdec6ee0cc, type: 2}
   m_RootGameObject: {fileID: 1599398036}
