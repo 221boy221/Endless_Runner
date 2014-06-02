@@ -4,6 +4,7 @@ using System.Collections;
 public class MainMenu:MonoBehaviour {
 
 	[SerializeField] private Texture logo;
+    [SerializeField] private Texture mainMenuTexture;
 	[SerializeField] private GUIStyle playStyle;
 	[SerializeField] private GUIStyle instructionsStyle;
 	[SerializeField] private GUIStyle quitStyle;
@@ -19,15 +20,17 @@ public class MainMenu:MonoBehaviour {
         if (!opened) {
 			return; 
         }
+        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), mainMenuTexture);
 
 		GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
-		GUI.DrawTexture(new Rect(960 - logo.width / 2 * 0.65f, 25, logo.width * 0.65f, logo.height * 0.65f), logo);
+        
+        GUI.DrawTexture(new Rect(930 - logo.width / 2, 25, logo.width, logo.height), logo);
 
-		if(GUI.Button(new Rect(610, 520, 150, 150), new GUIContent(), playStyle)) {		
+		if(GUI.Button(new Rect(1000, 700, 150, 150), new GUIContent(), playStyle)) {		
             Application.LoadLevel("testScene"); // Run game
-		} else if(GUI.Button(new Rect(610, 590, 700, 60), new GUIContent(), instructionsStyle)) {
+		} else if(GUI.Button(new Rect(1200, 800, 150, 150), new GUIContent(), instructionsStyle)) {
 			howToPlay.Open();   // Opens the HowToPlay script
-		} else if(GUI.Button(new Rect(610, 660, 700, 60), new GUIContent(), quitStyle)) {
+        } else if (GUI.Button(new Rect(1400, 900, 150, 150), new GUIContent(), quitStyle)) {
 			Application.Quit(); // Quits the game
 		}
     }

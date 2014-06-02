@@ -167,7 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a88a27d2816bb4e88896031e28eec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logo: {fileID: 2800000, guid: a1bbbd873940bd942893a77989ee68ad, type: 3}
+  logo: {fileID: 2800000, guid: 0e76c33952681f04592806315e5bb060, type: 3}
+  mainMenuTexture: {fileID: 2800000, guid: 329b0f5157bdfdd48869e80ff4300d9e, type: 3}
   playStyle:
     m_Name: 
     m_Normal:
@@ -223,20 +224,20 @@ MonoBehaviour:
     m_TextClipping: 0
     m_ImagePosition: 2
     m_ContentOffset: {x: 0, y: 0}
-    m_FixedWidth: 150
-    m_FixedHeight: 150
+    m_FixedWidth: 140
+    m_FixedHeight: 140
     m_StretchWidth: 0
     m_StretchHeight: 0
   instructionsStyle:
     m_Name: 
     m_Normal:
-      m_Background: {fileID: 2800000, guid: ce5ddcc8ec649444191cab7ef49f26f3, type: 3}
+      m_Background: {fileID: 2800000, guid: 0ca7523a60442f147a60a5f7e5a78900, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
-      m_Background: {fileID: 2800000, guid: 10edf4204f7710344b872732c8aa573c, type: 3}
+      m_Background: {fileID: 2800000, guid: c6fa93e5061617d4eacd77758be820c7, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
-      m_Background: {fileID: 2800000, guid: ea4e83c0c254d234389a76ec717ab73a, type: 3}
+      m_Background: {fileID: 2800000, guid: 658462020ae761c4fbd5edbfb2959fe5, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
@@ -282,8 +283,8 @@ MonoBehaviour:
     m_TextClipping: 0
     m_ImagePosition: 0
     m_ContentOffset: {x: 0, y: 0}
-    m_FixedWidth: 0
-    m_FixedHeight: 0
+    m_FixedWidth: 140
+    m_FixedHeight: 140
     m_StretchWidth: 1
     m_StretchHeight: 0
   quitStyle:
@@ -341,8 +342,8 @@ MonoBehaviour:
     m_TextClipping: 0
     m_ImagePosition: 0
     m_ContentOffset: {x: 0, y: 0}
-    m_FixedWidth: 0
-    m_FixedHeight: 0
+    m_FixedWidth: 140
+    m_FixedHeight: 140
     m_StretchWidth: 1
     m_StretchHeight: 0
 --- !u!114 &2010529271

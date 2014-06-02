@@ -6,9 +6,9 @@ public class GamePause:MonoBehaviour {
 	[SerializeField] private GUIStyle buttonStyle;
 	[SerializeField] private GUIStyle labelStyle;
 
-    //private PlayerSkillpoints playerSkillpoints;
-    //private WeaponRotation weaponRotation;
-    //private PlayerHealth playerHealth;
+    private PlayerSkillpoints playerSkillpoints;
+    private WeaponRotation weaponRotation;
+    private PlayerHealth playerHealth;
     public bool hasSkillpoints;
     
     
@@ -16,9 +16,9 @@ public class GamePause:MonoBehaviour {
         if (Time.timeScale == 0) {
             Time.timeScale = 1;
         }
-        //playerSkillpoints = GameObject.FindGameObjectWithTag("PlayerSkillpointsUI").GetComponent<PlayerSkillpoints>();
-        //weaponRotation = GameObject.FindGameObjectWithTag("Player").GetComponent<WeaponRotation>();
-        //playerHealth = GameObject.FindGameObjectWithTag("PlayerHealthUI").GetComponent<PlayerHealth>();
+        playerSkillpoints = GameObject.FindGameObjectWithTag("PlayerSkillpointsUI").GetComponent<PlayerSkillpoints>();
+        weaponRotation = GameObject.FindGameObjectWithTag("Player").GetComponent<WeaponRotation>();
+        playerHealth = GameObject.FindGameObjectWithTag("PlayerHealthUI").GetComponent<PlayerHealth>();
     }
 
     private void Update() {
@@ -31,35 +31,44 @@ public class GamePause:MonoBehaviour {
         if (Time.timeScale!=0) {
             return;
         }
-        
+        GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3 ((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
+
+		GUI.Box(new Rect(-1, -1, 1922, 1082), new GUIContent());
         
         // UPGRADES 
         if (hasSkillpoints) {
-            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 100, 150, 25), "You have skillpoints!");    
-            /*
-            // Increases player's fire rate
-            if (GUI.Button(new Rect(832, 420, 256, 50), new GUIContent("Fire Rate"), buttonStyle)) {
+            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 100, 150, 25), "You have skillpoints!"); 
+        }
+            
+            // Fire rate
+            GUI.Label(new Rect(400, 250, 256, 50), new GUIContent("Fire Rate: "), labelStyle);
+            if (GUI.Button(new Rect(500, 250, 256, 50), new GUIContent("Fire Rate"), buttonStyle)) {
                 if (hasSkillpoints) {
+                    /*
                     if (weaponRotation.fireRate >= 0.2f) {
                         weaponRotation.fireRate -= 0.1f;
                         playerSkillpoints.IncreaseValue(-1);
                     }
+                    */
+                    Debug.Log("Skillpoint spent");
                 } else {
                     GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
+                    Debug.Log("No Skillpoints");
                 }
             }
 
-            // Gives the player health
-            if (GUI.Button(new Rect(832, 470, 256, 50), new GUIContent("Extra Health"), buttonStyle)) {
+            // Health
+            GUI.Label(new Rect(400, 350, 256, 50), new GUIContent("Health: "), labelStyle);
+            if (GUI.Button(new Rect(500, 350, 256, 50), new GUIContent("Extra Health"), buttonStyle)) {
                 if (hasSkillpoints) {
-                    playerHealth.TakeDamage(-50);
-                    playerSkillpoints.IncreaseValue(-1);
+                    //playerHealth.TakeDamage(-50);
+                    //playerSkillpoints.IncreaseValue(-1);
+                    Debug.Log("Skillpoint spent");
                 } else {
                     GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
+                    Debug.Log("No Skillpoints");
                 }
             }
-            */
-        }
 
         
         
@@ -67,9 +76,7 @@ public class GamePause:MonoBehaviour {
 
         
         // MENU 
-		GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3 ((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
-
-		GUI.Box(new Rect(-1, -1, 1922, 1082), new GUIContent());
+		
 		GUI.Label(new Rect(832, 520, 256, 50), new GUIContent("Game Paused"), labelStyle);
 
 		if (GUI.Button(new Rect(832, 590, 256, 50), new GUIContent("Resume"), buttonStyle)) {
