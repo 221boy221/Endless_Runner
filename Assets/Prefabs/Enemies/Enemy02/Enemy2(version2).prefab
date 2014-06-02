@@ -29,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.1186705, y: -1.32501793, z: 0}
+  m_LocalPosition: {x: -1.29583931, y: 2.26962185, z: 0}
   m_LocalScale: {x: .400000006, y: .400000006, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,8 +57,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 3.83999991, y: 2.6099999}
+  m_Center: {x: 0, y: .0299999993}
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
@@ -75,7 +75,7 @@ AudioSource:
   Mute: 0
   Priority: 195
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: .551000118
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0

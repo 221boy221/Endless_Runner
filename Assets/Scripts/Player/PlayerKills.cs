@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerKills : MonoBehaviour
-{
+public class PlayerKills : MonoBehaviour {
 
-    private float kills = 0f;
+    private float kills = 0.0f;
     private GUIText killText;
 
     void Awake() {
