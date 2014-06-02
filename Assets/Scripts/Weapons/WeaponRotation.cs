@@ -47,6 +47,11 @@ public class WeaponRotation : MonoBehaviour {
 					Reload();
 				}
 		    }
+
+			if(Input.GetKeyDown(KeyCode.R) && !reloading){
+				ammo = 0;
+				Reload();
+			}
 			// tijd dat de speler aan het reloaden is. De groter de var reloadSpeed. De langer de tijd van reloaden.
 			if (reloading) {
 				counter -= Time.deltaTime;

@@ -1808,6 +1808,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy1: {fileID: 100000, guid: e55696f0a29e5b94d8bdeaba78163d9f, type: 2}
   enemy2: {fileID: 100000, guid: b0ff1860d0f5f8e4a943b35903386695, type: 2}
+  enemy1Num2: {fileID: 100000, guid: cccb1a0cbb877ec43aa56d916fa7a743, type: 2}
+  enemy2Num2: {fileID: 100000, guid: 17bc942dda8d0ca488b27202dba04c50, type: 2}
 --- !u!82 &1780864395
 AudioSource:
   m_ObjectHideFlags: 0
