@@ -13,6 +13,7 @@ public class EnemyBehaviour : MonoBehaviour {
 
     private PlayerXP playerXP;
 	private PlayerHealth playerHealth;
+    private PlayerKills playerKills;
 
 	private bool tfm = false;
 
@@ -21,6 +22,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	void Awake() {
         playerXP = GameObject.FindGameObjectWithTag("PlayerXPUI").GetComponent<PlayerXP>();
 		playerHealth = GameObject.FindGameObjectWithTag("PlayerHealthUI").GetComponent<PlayerHealth>();
+        playerKills = GameObject.FindGameObjectWithTag("PlayerKillsUI").GetComponent<PlayerKills>();
 		anim = GetComponent<Animator>();
 	}
 
@@ -77,6 +79,7 @@ public class EnemyBehaviour : MonoBehaviour {
         if (scriptEnemy.health <= 0) {
 			Death();
             playerXP.IncreaseValue(scriptEnemy.xpValue);
+            playerKills.IncreaseValue(1);
 		}
 	}
 

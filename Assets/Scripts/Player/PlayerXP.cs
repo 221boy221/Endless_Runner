@@ -4,8 +4,8 @@ using System.Collections;
 public class PlayerXP : MonoBehaviour 
 {
 
-    private float xp = 0f;
-    private float lvlUpXP = 500f;
+    private float xp = 0.0f;
+    private float lvlUpXP = 500.0f;
     private PlayerLvl playerLvl;
     private GUIText xpText;
 
