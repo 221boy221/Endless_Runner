@@ -16,6 +16,7 @@ public class PlayerLvl : MonoBehaviour
     }
 
     public void IncreaseValue(int incr) {
+		audio.Play ();
         lvl += incr;
         lvlText.text = "Lvl: " + lvl;
         // On every lvl up, give the player * skillpoints.
