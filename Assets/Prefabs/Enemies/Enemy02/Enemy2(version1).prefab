@@ -149,6 +149,7 @@ MonoBehaviour:
     scoreValue: 25
     xpValue: 50
   nextTransform: {fileID: 100000, guid: 17bc942dda8d0ca488b27202dba04c50, type: 2}
+  deathAnim: {fileID: 100000, guid: 3153d090e9619c74bb79e64d05ca939e, type: 2}
   weakness: {fileID: 100000, guid: c325aa60bad0d9a4e82b444114c110b3, type: 2}
   strength: {fileID: 100000, guid: acb12d9012ce5f34c8fdbf417c88b6e3, type: 2}
 --- !u!114 &11400002

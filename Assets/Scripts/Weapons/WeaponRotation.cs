@@ -14,6 +14,11 @@ public class WeaponRotation : MonoBehaviour {
 	private float counter;
 	private bool reloading = false;
 
+	//audio
+	public AudioClip startReloadSound;
+	public AudioClip finishReloadSound;
+	public AudioClip shootSound;
+
     public GameObject bullet1;//hieronder staan alle kogels van alle wapens.
     Vector2 mousePos;
 
@@ -58,6 +63,8 @@ public class WeaponRotation : MonoBehaviour {
 				Debug.Log(counter);
 				if (counter <= 0) {
 					ammo = maxAmmo;
+					audio.clip = finishReloadSound;
+					audio.Play();
 					reloading = false;
 				}
 			}
@@ -69,10 +76,14 @@ public class WeaponRotation : MonoBehaviour {
         Instantiate (bullet1,new Vector3(transform.position.x,transform.position.y, transform.position.z + 0.1f), this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^
 		ammo --;
 		Debug.Log (ammo);
+
+		audio.clip = shootSound;
 		audio.Play ();
 	}
 
 	void Reload () {
+		audio.clip = startReloadSound;
+		audio.Play ();
 		reloading = true;
 		counter = reloadTime;
 	}

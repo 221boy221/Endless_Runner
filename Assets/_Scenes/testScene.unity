@@ -1114,6 +1114,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: .200000003
+  startReloadSound: {fileID: 0}
+  finishReloadSound: {fileID: 0}
+  shootSound: {fileID: 0}
   bullet1: {fileID: 100000, guid: c325aa60bad0d9a4e82b444114c110b3, type: 2}
 --- !u!4 &1289536233
 Transform:
@@ -1454,7 +1457,12 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 29de0cde34cbf904cad9c33877e07360, type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 11400002, guid: 16492fb9ca215084387bf1cdec6ee0cc, type: 2}
+      propertyPath: shootSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0efea3ab485dc694dbfca433f2e0f057, type: 3}
+    m_RemovedComponents:
+    - {fileID: 8200002, guid: 16492fb9ca215084387bf1cdec6ee0cc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 16492fb9ca215084387bf1cdec6ee0cc, type: 2}
   m_RootGameObject: {fileID: 1599398036}
   m_IsPrefabParent: 0
@@ -1561,13 +1569,12 @@ Transform:
 --- !u!82 &1599398038
 AudioSource:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200002, guid: 16492fb9ca215084387bf1cdec6ee0cc,
-    type: 2}
-  m_PrefabInternal: {fileID: 1492203323}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1599398036}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 29de0cde34cbf904cad9c33877e07360, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: .5
   m_Pitch: 1
@@ -1630,6 +1637,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: .200000003
+  startReloadSound: {fileID: 0}
+  finishReloadSound: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: 0efea3ab485dc694dbfca433f2e0f057, type: 3}
   bullet1: {fileID: 100000, guid: acb12d9012ce5f34c8fdbf417c88b6e3, type: 2}
 --- !u!1 &1780864391
 GameObject:
