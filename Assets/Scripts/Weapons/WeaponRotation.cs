@@ -62,9 +62,9 @@ public class WeaponRotation : MonoBehaviour {
 				counter -= Time.deltaTime;
 				Debug.Log(counter);
 				if (counter <= 0) {
-					ammo = maxAmmo;
 					audio.clip = finishReloadSound;
 					audio.Play();
+					ammo = maxAmmo;
 					reloading = false;
 				}
 			}
@@ -76,7 +76,6 @@ public class WeaponRotation : MonoBehaviour {
         Instantiate (bullet1,new Vector3(transform.position.x,transform.position.y, transform.position.z + 0.1f), this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^
 		ammo --;
 		Debug.Log (ammo);
-
 		audio.clip = shootSound;
 		audio.Play ();
 	}
