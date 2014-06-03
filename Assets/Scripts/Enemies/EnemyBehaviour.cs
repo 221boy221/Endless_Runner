@@ -6,6 +6,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	public GlobalEnemyScript scriptEnemy;
 
 	public GameObject nextTransform;
+	public GameObject deathAnim;
 
 	public GameObject weakness; // <-- tag van kogel waar hij niet tegen kan.
 	public GameObject strength; // <-- tag van kogel waar hij sterker van wordt.
@@ -90,6 +91,9 @@ public class EnemyBehaviour : MonoBehaviour {
 
 
 	void Death() {
+		if (deathAnim != null) {
+			Instantiate (deathAnim, this.transform.position, this.transform.rotation);
+		}
 		Destroy (this.gameObject);
 	}
 }
