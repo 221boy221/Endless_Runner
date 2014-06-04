@@ -2615,7 +2615,7 @@ GameObject:
   - 114: {fileID: 1431050015}
   m_Layer: 0
   m_Name: UI_Pause
-  m_TagString: UpgradeMenu
+  m_TagString: PauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
