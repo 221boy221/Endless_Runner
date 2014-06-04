@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logo: {fileID: 2800000, guid: 0e76c33952681f04592806315e5bb060, type: 3}
-  mainMenuTexture: {fileID: 2800000, guid: d96342315ae9f0a468d3499aa7111a43, type: 3}
+  menuBG: {fileID: 2800000, guid: d96342315ae9f0a468d3499aa7111a43, type: 3}
   playStyle:
     m_Name: 
     m_Normal:
@@ -231,13 +231,13 @@ MonoBehaviour:
   instructionsStyle:
     m_Name: 
     m_Normal:
-      m_Background: {fileID: 2800000, guid: 0ca7523a60442f147a60a5f7e5a78900, type: 3}
+      m_Background: {fileID: 2800000, guid: 9af88151e3b490f42938ca5d004310c5, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
-      m_Background: {fileID: 2800000, guid: c6fa93e5061617d4eacd77758be820c7, type: 3}
+      m_Background: {fileID: 2800000, guid: e2ffb368beaa84140bd96fdc2ffa072b, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
-      m_Background: {fileID: 2800000, guid: 658462020ae761c4fbd5edbfb2959fe5, type: 3}
+      m_Background: {fileID: 2800000, guid: 24fcd5b328251cb459272cd88a8df713, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
@@ -357,6 +357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3398f5897b584d008e55e68b92393f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  howToPlayBG: {fileID: 2800000, guid: ad5a793197f03344c9fa3085edc6ec28, type: 3}
   labelHeadStyle:
     m_Name: 
     m_Normal:
@@ -478,13 +479,13 @@ MonoBehaviour:
   buttonStyle:
     m_Name: 
     m_Normal:
-      m_Background: {fileID: 0}
+      m_Background: {fileID: 2800000, guid: c972a860732619642a456f375050a374, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
-      m_Background: {fileID: 0}
+      m_Background: {fileID: 2800000, guid: 85e7432847423254587bd1ee4be12629, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
-      m_Background: {fileID: 0}
+      m_Background: {fileID: 2800000, guid: 25859761fa76d4140b57294b7104ed8a, type: 3}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
