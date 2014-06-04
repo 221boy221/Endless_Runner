@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class GamePause:MonoBehaviour {
-
+    
+    [SerializeField] private Texture pauseBG;
 	[SerializeField] private GUIStyle buttonStyle;
 	[SerializeField] private GUIStyle labelStyle;
 
@@ -31,6 +32,7 @@ public class GamePause:MonoBehaviour {
         if (Time.timeScale!=0) {
             return;
         }
+        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), pauseBG);
         GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3 ((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
 
 		GUI.Box(new Rect(-1, -1, 1922, 1082), new GUIContent());

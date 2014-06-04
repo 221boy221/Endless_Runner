@@ -4,7 +4,7 @@ using System.Collections;
 public class MainMenu:MonoBehaviour {
 
 	[SerializeField] private Texture logo;
-    [SerializeField] private Texture mainMenuTexture;
+    [SerializeField] private Texture menuBG;
 	[SerializeField] private GUIStyle playStyle;
 	[SerializeField] private GUIStyle instructionsStyle;
 	[SerializeField] private GUIStyle quitStyle;
@@ -20,7 +20,7 @@ public class MainMenu:MonoBehaviour {
         if (!opened) {
 			return; 
         }
-        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), mainMenuTexture);
+        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), menuBG);
 
 		GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
         
