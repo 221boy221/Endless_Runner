@@ -22,7 +22,7 @@ public class HowToPlay:MonoBehaviour {
         GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), howToPlayBG);
 		GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
 
-		if(GUI.Button(new Rect(860, 1000, 200, 50), new GUIContent("Back"), buttonStyle))
+		if(GUI.Button(new Rect(25, 900, 150, 150), new GUIContent(), buttonStyle))
 			mainMenu.Open();
 	}
 
