@@ -63,6 +63,6 @@ public class EnemySpawner : MonoBehaviour {
 			}
 		}
 
-		Invoke("EnemySpawn",Random.Range(5f - portalCounter,7f - portalCounter));
+		Invoke("EnemySpawn",Random.Range(5f - (portalCounter/2),7f - (portalCounter/2)));
 	}
 }
