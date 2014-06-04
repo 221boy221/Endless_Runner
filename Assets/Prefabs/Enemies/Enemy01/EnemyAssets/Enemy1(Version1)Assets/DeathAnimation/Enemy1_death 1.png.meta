@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 7eb340ff182c65c4cba9eac36c6daf97
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Enemy1_death 1_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1909
+        width: 92
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_1
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1867
+        width: 132
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_2
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1864
+        width: 131
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_3
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1864
+        width: 146
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_4
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1865
+        width: 144
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_5
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1863
+        width: 144
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_6
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1863
+        width: 150
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_7
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1863
+        width: 156
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1679
+        width: 180
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_9
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1720
+        width: 190
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_10
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1720
+        width: 136
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_11
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1715
+        width: 167
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Enemy1_death 1_13
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1720
+        width: 146
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Enemy1_death 1_14
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 1752
+        width: 82
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_15
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1755
+        width: 84
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_16
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 1757
+        width: 80
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1573
+        width: 83
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_18
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1573
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_19
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1573
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_death 1_20
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1571
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

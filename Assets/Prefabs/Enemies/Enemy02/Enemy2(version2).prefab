@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.29583931, y: 2.26962185, z: 0}
-  m_LocalScale: {x: .400000006, y: .400000006, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!50 &5000000
@@ -126,7 +126,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 85fafc19d6ad2b0499f7939204a9fa5b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 105f50fc715be7c4fb1f5d4690054015, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
@@ -144,14 +144,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptEnemy:
     movementSpeed: 2
-    health: 100
+    health: 120
     attackDamage: 20
     scoreValue: 50
     xpValue: 100
-  nextTransform: {fileID: 0}
+  nextTransform: {fileID: 100002, guid: c026ec7b691504846894aa9b523390ef, type: 2}
   deathAnim: {fileID: 100000, guid: 411e5002eb849b54683d2c1f3b58e522, type: 2}
   weakness: {fileID: 100000, guid: c325aa60bad0d9a4e82b444114c110b3, type: 2}
   strength: {fileID: 100000, guid: acb12d9012ce5f34c8fdbf417c88b6e3, type: 2}
+  transformSound: {fileID: 8300000, guid: 9e506c31c4fc3b5478e41467ba741a8d, type: 3}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,7 +188,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: f3be00c1a6723b24bba88a94a9237955, type: 3}
+  m_Sprite: {fileID: 21300002, guid: f2804003769a6cf43b6e4b844763adf6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

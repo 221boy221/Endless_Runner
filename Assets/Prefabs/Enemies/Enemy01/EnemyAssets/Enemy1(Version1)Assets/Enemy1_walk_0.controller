@@ -82,7 +82,6 @@ StateMachine:
   m_States:
   - {fileID: 110200000}
   - {fileID: 110257684}
-  - {fileID: 110211269}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:

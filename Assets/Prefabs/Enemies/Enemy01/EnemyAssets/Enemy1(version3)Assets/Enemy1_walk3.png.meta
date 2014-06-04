@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: ffc7c9076f6a77a4b954f4ac91c23ce4
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Enemy1_walk3_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1877
+        width: 341
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1872
+        width: 340
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_2
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1877
+        width: 342
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_3
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1879
+        width: 340
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_4
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1879
+        width: 341
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_5
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1709
+        width: 341
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_6
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1704
+        width: 340
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_7
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1705
+        width: 340
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_8
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1703
+        width: 340
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_9
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1705
+        width: 340
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1533
+        width: 340
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_11
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1533
+        width: 340
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_12
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1536
+        width: 340
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_13
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1535
+        width: 340
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_14
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1536
+        width: 340
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_15
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1367
+        width: 340
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_16
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1365
+        width: 340
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_17
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1363
+        width: 341
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Enemy1_walk3_18
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1360
+        width: 340
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

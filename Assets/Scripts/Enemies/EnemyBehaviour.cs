@@ -15,6 +15,8 @@ public class EnemyBehaviour : MonoBehaviour {
 	private PlayerHealth playerHealth;
     private PlayerKills playerKills;
 
+	public AudioClip transformSound;
+
 	private bool tfm = false;
 
 	Animator anim;
@@ -56,15 +58,15 @@ public class EnemyBehaviour : MonoBehaviour {
 	void GetStronger() {
 
 		if (nextTransform != null && !tfm) {
-
 			tfm = true;
-			Vector2 offset = new Vector2(transform.position.x,transform.position.y + 0.17f);
+			Vector2 offset = new Vector2(transform.position.x,transform.position.y + 0.15f);
 			transform.position = offset;
 
 			anim.Play("EnemyTransformation1");
+			audio.clip = transformSound;
 			audio.Play ();
 			scriptEnemy.movementSpeed = 1.5f;
-			Invoke ("TransformEnemy", 1f);
+			Invoke ("TransformEnemy", 0.85f);
 
 		}
 	}

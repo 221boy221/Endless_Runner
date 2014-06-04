@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3be00c1a6723b24bba88a94a9237955
+guid: f2804003769a6cf43b6e4b844763adf6
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -48,127 +48,127 @@ TextureImporter:
     - name: Enemy2_walk2_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1681
-        width: 438
-        height: 276
+        x: 2
+        y: 873
+        width: 175
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_1
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1679
-        width: 447
-        height: 304
+        x: 182
+        y: 871
+        width: 177
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_2
       rect:
         serializedVersion: 2
-        x: 896
-        y: 1685
-        width: 449
-        height: 326
+        x: 362
+        y: 874
+        width: 179
+        height: 129
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_3
       rect:
         serializedVersion: 2
-        x: 1345
-        y: 1701
-        width: 452
-        height: 334
+        x: 543
+        y: 881
+        width: 180
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1336
-        width: 445
-        height: 336
+        x: 724
+        y: 882
+        width: 178
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_5
       rect:
         serializedVersion: 2
-        x: 447
-        y: 1341
-        width: 442
-        height: 334
+        x: 0
+        y: 730
+        width: 176
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_6
       rect:
         serializedVersion: 2
-        x: 897
-        y: 1341
-        width: 438
-        height: 336
+        x: 181
+        y: 731
+        width: 175
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_7
       rect:
         serializedVersion: 2
-        x: 1347
-        y: 1343
-        width: 437
-        height: 337
+        x: 362
+        y: 731
+        width: 175
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 973
-        width: 437
-        height: 336
+        x: 543
+        y: 731
+        width: 175
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_9
       rect:
         serializedVersion: 2
-        x: 447
-        y: 973
-        width: 438
-        height: 334
+        x: 724
+        y: 730
+        width: 174
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_10
       rect:
         serializedVersion: 2
-        x: 897
-        y: 969
-        width: 435
-        height: 336
+        x: 0
+        y: 576
+        width: 173
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_11
       rect:
         serializedVersion: 2
-        x: 1345
-        y: 965
-        width: 434
-        height: 334
+        x: 181
+        y: 575
+        width: 173
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 591
-        width: 435
-        height: 316
+        x: 363
+        y: 572
+        width: 173
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: Enemy2_walk2_13
       rect:
         serializedVersion: 2
-        x: 459
-        y: 579
-        width: 429
-        height: 302
+        x: 548
+        y: 567
+        width: 170
+        height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
