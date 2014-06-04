@@ -14,8 +14,11 @@ public class EnemySpawner : MonoBehaviour {
 	}
 
 	void SpawnEnemy(GameObject EnemyType) {
-
-		Instantiate(EnemyType, new Vector2 (7, 0), this.transform.rotation);
+		if (EnemyType == enemy1 || EnemyType == enemy2) {
+			Instantiate (EnemyType, new Vector2 (7, 0), this.transform.rotation);
+		} else {
+			Instantiate (EnemyType, new Vector2 (7, 0.15f), this.transform.rotation);
+		}
 	}
 
 	void Spawn2Enemies(GameObject EnemyType1,GameObject EnemyType2){
@@ -26,7 +29,7 @@ public class EnemySpawner : MonoBehaviour {
 
 	void EnemySpawn() {
 
-		int chooseSpawnType = Random.Range (1, 3);
+		int chooseSpawnType = Random.Range (1, 4);
 		int chooseEnemyToSpawn = Random.Range(1, 3);
 
 		Debug.Log(chooseEnemyToSpawn);
@@ -42,7 +45,14 @@ public class EnemySpawner : MonoBehaviour {
 			} else if (chooseEnemyToSpawn == 2) {
 				Spawn2Enemies (enemy2,enemy1);
 			}	
+		}else{
+			if(chooseEnemyToSpawn == 1){
+				SpawnEnemy(enemy1Num2);
+			}else if(chooseEnemyToSpawn == 2){
+				SpawnEnemy(enemy2Num2);
+			}
 		}
+
 
 		Invoke("EnemySpawn",Random.Range(5f,7f));
 	}

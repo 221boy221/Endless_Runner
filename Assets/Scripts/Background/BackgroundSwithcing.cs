@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BackgroundSwithcing : MonoBehaviour {
 
+	public GameObject flash;
 	public GameObject[] backgrounds;
 	private int nrBackgrounds;
 	private int currentBackground;
@@ -11,8 +12,7 @@ public class BackgroundSwithcing : MonoBehaviour {
 	void Awake () {
 		nrBackgrounds = backgrounds.Length;
 		currentBackground = nrBackgrounds + 1; //anders kiest hij de eerste niet
-		chooseBackground ();
-		changeBackgroundMusic();
+		changeLevel (); // <------------ voor test van background change. Moet vervangen worden met "chooseBackground"
 	}
 
 	public void chooseBackground(){
@@ -37,7 +37,13 @@ public class BackgroundSwithcing : MonoBehaviour {
 	}
 
 	public void changeBackgroundMusic(){
-		float randomPitch = Random.Range (0.95f, 1.1f);
+		float randomPitch = Random.Range (0.98f, 1.1f);
 		audio.pitch = randomPitch; 
+	}
+
+	public void changeLevel(){
+		Instantiate (flash,new Vector3(transform.position.x,transform.position.y,transform.position.z + -3), transform.rotation);
+		Invoke ("chooseBackground", 1.75f);
+		Invoke ("changeBackgroundMusic", 1.75f);
 	}
 }
