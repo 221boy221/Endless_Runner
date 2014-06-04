@@ -2,9 +2,12 @@
 using System.Collections;
 
 public class GamePause:MonoBehaviour {
-
-	[SerializeField] private GUIStyle buttonStyle;
+    
+    [SerializeField] private Texture2D pauseBG;
 	[SerializeField] private GUIStyle labelStyle;
+    [SerializeField] private GUIStyle upgradeStyle;
+    [SerializeField] private GUIStyle resumeStyle;
+    [SerializeField] private GUIStyle mainmenuStyle;
 
     private PlayerSkillpoints playerSkillpoints;
     private WeaponRotation weaponRotation;
@@ -31,44 +34,42 @@ public class GamePause:MonoBehaviour {
         if (Time.timeScale!=0) {
             return;
         }
+        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), pauseBG);
         GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3 ((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
-
 		GUI.Box(new Rect(-1, -1, 1922, 1082), new GUIContent());
         
         // UPGRADES 
         if (hasSkillpoints) {
             GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 100, 150, 25), "You have skillpoints!"); 
         }
-            
-            // Fire rate
-            GUI.Label(new Rect(400, 250, 256, 50), new GUIContent("Fire Rate: "), labelStyle);
-            if (GUI.Button(new Rect(500, 250, 256, 50), new GUIContent("Fire Rate"), buttonStyle)) {
-                if (hasSkillpoints) {
-                    /*
-                    if (weaponRotation.fireRate >= 0.2f) {
-                        weaponRotation.fireRate -= 0.1f;
-                        playerSkillpoints.IncreaseValue(-1);
-                    }
-                    */
-                    Debug.Log("Skillpoint spent");
-                } else {
-                    GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
-                    Debug.Log("No Skillpoints");
+        // Fire rate
+        GUI.Label(new Rect(350, 275, 256, 50), new GUIContent("Fire Rate: "), labelStyle);
+        if (GUI.Button(new Rect(500, 250, 75, 75), new GUIContent(), upgradeStyle)) {
+            if (hasSkillpoints) {
+                /*
+                if (weaponRotation.fireRate >= 0.2f) {
+                    weaponRotation.fireRate -= 0.1f;
+                    playerSkillpoints.IncreaseValue(-1);
                 }
-            }
-
-            // Health
-            GUI.Label(new Rect(400, 350, 256, 50), new GUIContent("Health: "), labelStyle);
-            if (GUI.Button(new Rect(500, 350, 256, 50), new GUIContent("Extra Health"), buttonStyle)) {
-                if (hasSkillpoints) {
-                    //playerHealth.TakeDamage(-50);
-                    //playerSkillpoints.IncreaseValue(-1);
-                    Debug.Log("Skillpoint spent");
+                */
+                Debug.Log("Skillpoint spent");
                 } else {
-                    GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
-                    Debug.Log("No Skillpoints");
-                }
+                GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
+                Debug.Log("No Skillpoints");
             }
+        }
+        // Health
+        GUI.Label(new Rect(350, 375, 256, 50), new GUIContent("Health: "), labelStyle);
+        if (GUI.Button(new Rect(500, 350, 75, 75), new GUIContent(), upgradeStyle)) {
+            if (hasSkillpoints) {
+                //playerHealth.TakeDamage(-50);
+                //playerSkillpoints.IncreaseValue(-1);
+                Debug.Log("Skillpoint spent");
+            } else {
+                GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
+                Debug.Log("No Skillpoints");
+            }
+        }
 
         
         
@@ -76,23 +77,21 @@ public class GamePause:MonoBehaviour {
 
         
         // MENU 
-		
 		GUI.Label(new Rect(832, 520, 256, 50), new GUIContent("Game Paused"), labelStyle);
 
-		if (GUI.Button(new Rect(832, 590, 256, 50), new GUIContent("Resume"), buttonStyle)) {
+		if (GUI.Button(new Rect(832, 600, 150, 150), new GUIContent(), resumeStyle)) {
 			TogglePause();
-		} else if (GUI.Button(new Rect(832, 640, 256, 50), new GUIContent("Main Menu"), buttonStyle)) {
+		} else if (GUI.Button(new Rect(832, 800, 150, 150), new GUIContent(), mainmenuStyle)) {
 			Application.LoadLevel("MainMenu");
 		}
     }
 
     public void TogglePause() {
-
         Object[] objects = FindObjectsOfType(typeof(GameObject));
-        foreach (GameObject go in objects) { // This will send a message to all GameObjects to run "GamePause"
+        // This will send a message to all GameObjects to run "GamePause"
+        foreach (GameObject go in objects) { 
             go.SendMessage("GamePause", SendMessageOptions.DontRequireReceiver);
         }
         Time.timeScale = (Time.timeScale == 0) ? 1 : 0; // If it's 0 make it 1, else if 1 make it 0
     }
-
 }

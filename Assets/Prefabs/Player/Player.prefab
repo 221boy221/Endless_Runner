@@ -272,6 +272,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: .200000003
   bullet1: {fileID: 100000, guid: c325aa60bad0d9a4e82b444114c110b3, type: 2}
+  startReloadSound: {fileID: 0}
+  finishReloadSound: {fileID: 0}
+  shootSound: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -285,6 +288,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: .200000003
   bullet1: {fileID: 100000, guid: acb12d9012ce5f34c8fdbf417c88b6e3, type: 2}
+  startReloadSound: {fileID: 0}
+  finishReloadSound: {fileID: 0}
+  shootSound: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -311,9 +317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a3fb1bbde78d4428f4ee13cd9fd055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpBar: {fileID: 2800000, guid: eeb6a77e92df67e4c917ed979d23d445, type: 3}
-  hbBackground: {fileID: 2800000, guid: a005052a00b9a164da3d11b419ee8de8, type: 3}
-  hpOverlay: {fileID: 2800000, guid: 84d3804eb8348144ba36c90f4e5ed373, type: 3}
+  hpBar: {fileID: 2800000, guid: a49484499d8f4b949a4871585a412ec8, type: 3}
+  hbBackground: {fileID: 2800000, guid: 3fcb3915a09fa0e46bf7b1a1396dbcf6, type: 3}
+  hpOverlay: {fileID: 2800000, guid: 7019b7a137b8b0c42a393ca05f511a45, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

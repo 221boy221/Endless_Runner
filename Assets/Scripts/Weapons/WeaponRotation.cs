@@ -3,9 +3,13 @@ using System.Collections;
 
 public class WeaponRotation : MonoBehaviour {
 
+    protected bool paused = false;
+
+    // Shooting
     private float nextFireTime;
     public float fireRate = 0.2f;
-    protected bool paused = false;
+    public GameObject bullet1;  // Holds all bullets
+    Vector2 mousePos;
 
 	// Reload variables
 	private float maxAmmo = 5;
@@ -19,8 +23,7 @@ public class WeaponRotation : MonoBehaviour {
 	public AudioClip finishReloadSound;
 	public AudioClip shootSound;
 
-    public GameObject bullet1;//hieronder staan alle kogels van alle wapens.
-    Vector2 mousePos;
+    
 
 
 	void Awake() {
@@ -34,7 +37,7 @@ public class WeaponRotation : MonoBehaviour {
 	void Update() {
         if (!paused) { // If the game is not paused, continue.
 
-		    Vector3 objectPos = Camera.main.WorldToScreenPoint (transform.position); // <-- hier bereken ik de positie van de speler in de camera view
+		    Vector3 objectPos = Camera.main.WorldToScreenPoint (transform.position); // Calculating the position of the player using pixels
 		
 		    mousePos.x = Input.mousePosition.x - objectPos.x; // in de x van de vector 2 van de variable mousePos stop ik de x van de muis - de x van de speler waar hij zich op het scherm bevind.
 		    mousePos.y = Input.mousePosition.y - objectPos.y; // in de y van de vector 2 van de variable mousePos stop ik de y van de muis - de y van de speler waar hij zich op het scherm bevind.
