@@ -16,6 +16,7 @@ public class EnemyBehaviour : MonoBehaviour {
     private PlayerKills playerKills;
 
 	public AudioClip transformSound;
+	public AudioClip attackSound;
 
 	private bool tfm = false;
 
@@ -86,8 +87,12 @@ public class EnemyBehaviour : MonoBehaviour {
 	}
 
 	void Attack (){
-		Debug.Log (scriptEnemy.attackDamage + " habba habba");
+		//Debug.Log (scriptEnemy.attackDamage + " habba habba");
+		audio.clip = attackSound;
+		audio.volume = 0.5f;
+		audio.Play ();
 		playerHealth.TakeDamage (scriptEnemy.attackDamage);
+
 	}
 
     public float Health {
