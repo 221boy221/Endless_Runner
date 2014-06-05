@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Enemy2_walk3_0
+  m_Name: Enemy2_walk3_1
   serializedVersion: 2
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -26,7 +26,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Enemy2(version3)
-  m_Speed: 1.5
+  m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 1366864aa67931849bcf46e57c790334, type: 2}
