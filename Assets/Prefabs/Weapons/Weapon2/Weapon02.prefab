@@ -12,7 +12,7 @@ GameObject:
   - 82: {fileID: 8200000}
   m_Layer: 0
   m_Name: Weapon02
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +127,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: .200000003
   bullet1: {fileID: 100000, guid: c325aa60bad0d9a4e82b444114c110b3, type: 2}
+  startReloadSound: {fileID: 0}
+  finishReloadSound: {fileID: 0}
+  shootSound: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

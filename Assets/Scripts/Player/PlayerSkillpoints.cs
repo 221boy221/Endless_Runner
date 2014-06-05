@@ -21,6 +21,8 @@ public class PlayerSkillpoints : MonoBehaviour {
         if (Skillpoints > 0) {
             gamePause.hasSkillpoints = true;
             //GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "Skillpoints available!");
+        } else {
+            gamePause.hasSkillpoints = false;
         }
     }
 }

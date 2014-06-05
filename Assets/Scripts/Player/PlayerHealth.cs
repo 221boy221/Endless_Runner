@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerHealth : MonoBehaviour {
 
     private float health = 100.0f;
+    public float GetHealth { get { return health; } }
 
     public void TakeDamage(float dmg) {
         health -= dmg;
@@ -12,13 +13,18 @@ public class PlayerHealth : MonoBehaviour {
             Dead();
         }
     }
-
+    public void SetHealth(float hp) {
+        health = hp;
+    }
+    public void IncreaseHealth(float hp) {
+        health += hp;
+        if (health > 100) {
+            health = 100;
+        }
+    }
+    
     void Dead() {
         Debug.Log("You are dead.");
         Application.LoadLevel("gameOver");
-    }
-
-    public float Health {
-        get { return health; }
     }
 }

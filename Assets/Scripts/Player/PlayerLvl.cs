@@ -20,6 +20,6 @@ public class PlayerLvl : MonoBehaviour
         lvl += incr;
         lvlText.text = "Lvl: " + lvl;
         // On every lvl up, give the player * skillpoints.
-        playerSkillpoints.IncreaseValue(2);
+        playerSkillpoints.IncreaseValue(1);
     }
 }

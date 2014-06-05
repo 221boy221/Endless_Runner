@@ -19,7 +19,7 @@ public class Healthbar : MonoBehaviour {
         playerHealth = GameObject.FindGameObjectWithTag("PlayerHealthUI").GetComponent<PlayerHealth>();
         enemyHealth = GetComponent<EnemyBehaviour>();
         if (gameObject.tag == "Player") {
-            maxHealth = playerHealth.Health;
+            maxHealth = playerHealth.GetHealth;
         } else if (enemyHealth != null) {
             maxHealth = enemyHealth.Health;
         }
@@ -37,7 +37,7 @@ public class Healthbar : MonoBehaviour {
         if (!paused) {
             GUI.DrawTexture(new Rect(position.x - 45, (Screen.height - position.y) + (position.y / 2), hbBackground.width / 7, hbBackground.height / 5), hbBackground);
             if (gameObject.tag == "Player") {
-                GUI.DrawTexture(new Rect(position.x - 40, ((Screen.height - position.y) + (position.y / 2) + 1), (hpBar.width / 7) / (maxHealth / playerHealth.Health), hpBar.height / 5), hpBar);
+                GUI.DrawTexture(new Rect(position.x - 40, ((Screen.height - position.y) + (position.y / 2) + 1), (hpBar.width / 7) / (maxHealth / playerHealth.GetHealth), hpBar.height / 5), hpBar);
             } else {
                 GUI.DrawTexture(new Rect(position.x - 40, ((Screen.height - position.y) + (position.y / 2) + 1), (hpBar.width / 7) / (maxHealth / enemyHealth.Health), hpBar.height / 5), hpBar);
             }

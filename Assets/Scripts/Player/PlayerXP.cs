@@ -5,7 +5,7 @@ public class PlayerXP : MonoBehaviour
 {
 
     private float xp = 0.0f;
-    private float lvlUpXP = 500.0f;
+    private float lvlUpXP = 1000.0f;
     private PlayerLvl playerLvl;
     private GUIText xpText;
 
@@ -23,7 +23,7 @@ public class PlayerXP : MonoBehaviour
         if (xp >= lvlUpXP) {   
             xp -= lvlUpXP;
             playerLvl.IncreaseValue(1);
-            lvlUpXP += lvlUpXP;
+            lvlUpXP += (500 + (lvlUpXP / 4));
             Awake();
         }
     }

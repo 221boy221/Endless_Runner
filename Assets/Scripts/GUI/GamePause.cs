@@ -9,8 +9,12 @@ public class GamePause:MonoBehaviour {
     [SerializeField] private GUIStyle resumeStyle;
     [SerializeField] private GUIStyle mainmenuStyle;
 
+    private float firerateLvl = 0;
+    private float ammoLvl = 0;
+    public float damageLvl = 0;
+    
     private PlayerSkillpoints playerSkillpoints;
-    private WeaponRotation weaponRotation;
+    private WeaponSwitching weaponSwitching;
     private PlayerHealth playerHealth;
     public bool hasSkillpoints;
     
@@ -20,7 +24,7 @@ public class GamePause:MonoBehaviour {
             Time.timeScale = 1;
         }
         playerSkillpoints = GameObject.FindGameObjectWithTag("PlayerSkillpointsUI").GetComponent<PlayerSkillpoints>();
-        weaponRotation = GameObject.FindGameObjectWithTag("Player").GetComponent<WeaponRotation>();
+        weaponSwitching = GameObject.FindGameObjectWithTag("Player").GetComponent<WeaponSwitching>();
         playerHealth = GameObject.FindGameObjectWithTag("PlayerHealthUI").GetComponent<PlayerHealth>();
     }
 
@@ -43,39 +47,69 @@ public class GamePause:MonoBehaviour {
             GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 100, 150, 25), "You have skillpoints!"); 
         }
         // Fire rate
-        GUI.Label(new Rect(350, 275, 256, 50), new GUIContent("Fire Rate: "), labelStyle);
+        GUI.Label(new Rect(350, 275, 256, 50), new GUIContent("Fire Rate: " + firerateLvl), labelStyle);
         if (GUI.Button(new Rect(500, 250, 75, 75), new GUIContent(), upgradeStyle)) {
             if (hasSkillpoints) {
-                /*
-                if (weaponRotation.fireRate >= 0.2f) {
-                    weaponRotation.fireRate -= 0.1f;
+                if (firerateLvl < 3) {
+                    firerateLvl += 1;
                     playerSkillpoints.IncreaseValue(-1);
-                }
-                */
-                Debug.Log("Skillpoint spent");
+                    weaponSwitching.UpdateFireRate(firerateLvl);
+                    Debug.Log("Skillpoint spent");
                 } else {
-                GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
-                Debug.Log("No Skillpoints");
-            }
-        }
-        // Health
-        GUI.Label(new Rect(350, 375, 256, 50), new GUIContent("Health: "), labelStyle);
-        if (GUI.Button(new Rect(500, 350, 75, 75), new GUIContent(), upgradeStyle)) {
-            if (hasSkillpoints) {
-                //playerHealth.TakeDamage(-50);
-                //playerSkillpoints.IncreaseValue(-1);
-                Debug.Log("Skillpoint spent");
+                    Debug.Log("Maxed out");
+                }
             } else {
                 GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
                 Debug.Log("No Skillpoints");
             }
         }
-
-        
-        
-
-
-        
+        // Health
+        GUI.Label(new Rect(350, 375, 256, 50), new GUIContent("Health +50 "), labelStyle);
+        if (GUI.Button(new Rect(500, 350, 75, 75), new GUIContent(), upgradeStyle)) {
+            if (hasSkillpoints) {
+                if (playerHealth.GetHealth < 100) {
+                    playerHealth.IncreaseHealth(50);
+                    playerSkillpoints.IncreaseValue(-1);
+                    Debug.Log("Skillpoint spent");
+                }
+            } else {
+                GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
+                Debug.Log("No Skillpoints");
+            }
+        }
+        // Damage
+        GUI.Label(new Rect(850, 275, 256, 50), new GUIContent("Damage: " + damageLvl), labelStyle);
+        if (GUI.Button(new Rect(1000, 250, 75, 75), new GUIContent(), upgradeStyle)) {
+            if (hasSkillpoints) {
+                if (damageLvl < 3) {
+                    damageLvl += 1;
+                    playerSkillpoints.IncreaseValue(-1);
+                    Debug.Log("Skillpoint spent");
+                } else {
+                    Debug.Log("Maxed out");
+                }
+            } else {
+                GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
+                Debug.Log("No Skillpoints");
+            }
+        }
+        // Ammo
+        GUI.Label(new Rect(850, 375, 256, 50), new GUIContent("Ammo: " + ammoLvl), labelStyle);
+        if (GUI.Button(new Rect(1000, 350, 75, 75), new GUIContent(), upgradeStyle)) {
+            if (hasSkillpoints) {
+                if (ammoLvl < 3) {
+                    ammoLvl += 1;
+                    weaponSwitching.UpdateAmmo(ammoLvl);
+                    playerSkillpoints.IncreaseValue(-1);
+                    Debug.Log("Skillpoint spent");
+                } else {
+                    Debug.Log("Maxed out");
+                }
+            } else {
+                GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
+                Debug.Log("No Skillpoints");
+            }
+        }
         // MENU 
 		GUI.Label(new Rect(832, 520, 256, 50), new GUIContent("Game Paused"), labelStyle);
 

@@ -1197,6 +1197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce9be2c63b3e61840b94230ffcb88942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireRate: 0
+  maxAmmo: 0
   weapons:
   - {fileID: 1599398036}
   - {fileID: 1289536230}
@@ -2345,7 +2347,7 @@ GameObject:
   - 82: {fileID: 1289536231}
   m_Layer: 0
   m_Name: Weapon02
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3396,7 +3398,7 @@ GameObject:
   - 82: {fileID: 1599398038}
   m_Layer: 0
   m_Name: Weapon01
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

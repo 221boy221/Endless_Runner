@@ -4,6 +4,11 @@ using System.Collections;
 public class WeaponSwitching : MonoBehaviour {
 
     private int nrWeapons;
+    private float firerateLvl;
+    public float fireRate;
+    private float ammolvl;
+    public float maxAmmo;
+
     public GameObject[] weapons; // Array holding all weapons
     public int currentWeapon = 0;
     protected bool paused = false;
@@ -35,6 +40,42 @@ public class WeaponSwitching : MonoBehaviour {
             } else {
                 weapons[i].gameObject.SetActive(false);
             }
+            UpdateFireRate(firerateLvl);
+            UpdateAmmo(ammolvl);
+        }
+    }
+
+    public void UpdateFireRate(float fireRateLvl) {
+        firerateLvl = fireRateLvl;
+        if (fireRateLvl == 0) {
+            fireRate = 0.2f;
+            Debug.Log(fireRate);
+        } else if (fireRateLvl == 1) {
+            fireRate = 0.15f;
+            Debug.Log(fireRate);
+        } else if (fireRateLvl == 2) {
+            fireRate = 0.1f;
+            Debug.Log(fireRate);
+        } else {
+            fireRate = 0.05f;
+            Debug.Log(fireRate);
+        }
+    }
+
+    public void UpdateAmmo(float ammoLvl) {
+        ammolvl = ammoLvl;
+        if (ammoLvl == 0) {
+            maxAmmo = 5.0f;
+            Debug.Log(maxAmmo);
+        } else if (ammoLvl == 1) {
+            maxAmmo = 8.0f;
+            Debug.Log(maxAmmo);
+        } else if (ammoLvl == 2) {
+            maxAmmo = 12.0f;
+            Debug.Log(maxAmmo);
+        } else {
+            maxAmmo = 15.0f;
+            Debug.Log(maxAmmo);
         }
     }
 }

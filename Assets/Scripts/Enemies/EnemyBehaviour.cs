@@ -8,8 +8,8 @@ public class EnemyBehaviour : MonoBehaviour {
 	public GameObject nextTransform;
 	public GameObject deathAnim;
 
-	public GameObject weakness; // <-- tag van kogel waar hij niet tegen kan.
-	public GameObject strength; // <-- tag van kogel waar hij sterker van wordt.
+	public GameObject weakness;
+	public GameObject strength;
 
     private PlayerXP playerXP;
 	private PlayerHealth playerHealth;
@@ -102,5 +102,3 @@ public class EnemyBehaviour : MonoBehaviour {
 		Destroy (this.gameObject);
 	}
 }
-
-// Ga quads gebruiken als placeholder en 2d rigitbodies
