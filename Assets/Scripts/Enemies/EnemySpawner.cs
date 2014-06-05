@@ -27,8 +27,8 @@ public class EnemySpawner : MonoBehaviour {
 
 	void Spawn2Enemies(GameObject EnemyType1,GameObject EnemyType2){
 
-		Instantiate(EnemyType1, new Vector2 (7, 0), this.transform.rotation);
-		Instantiate(EnemyType2, new Vector2 (10, 0), this.transform.rotation);
+			Instantiate(EnemyType1, new Vector2 (7, 0), this.transform.rotation);
+			Instantiate(EnemyType2, new Vector2 (10, 0), this.transform.rotation);
 	}
 
 	void EnemySpawn() {
@@ -57,12 +57,18 @@ public class EnemySpawner : MonoBehaviour {
 			}
 		}else{
 			portalCounter ++;
+
 			if(portalCounter == 5){
 				portalCounter = 0;
 				Instantiate(portal, new Vector2 (4, 0.48f), this.transform.rotation);
+			}else{
+				if(chooseEnemyToSpawn == 1){
+					Spawn2Enemies(enemy1,enemy1);
+				}else{
+					Spawn2Enemies(enemy2,enemy2);
+				}
 			}
 		}
-
-		Invoke("EnemySpawn",Random.Range(5f - portalCounter,7f - portalCounter));
+		Invoke("EnemySpawn",Random.Range(5f - (portalCounter/2),7f - (portalCounter/2)));
 	}
 }

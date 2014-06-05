@@ -1137,6 +1137,7 @@ GameObject:
   - 114: {fileID: 642311334}
   - 114: {fileID: 642311333}
   - 61: {fileID: 642311332}
+  - 114: {fileID: 642311335}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1203,6 +1204,20 @@ MonoBehaviour:
   - {fileID: 1599398036}
   - {fileID: 1289536230}
   currentWeapon: 0
+--- !u!114 &642311335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642311330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 376055d6d7c8327469a249021eb4c35d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xpBar: {fileID: 2800000, guid: b5ac833fa5a7bac458221d83628bb0ff, type: 3}
+  xpBackground: {fileID: 2800000, guid: 1906f6d33d5ca184cafc7367b26876e7, type: 3}
+  xpOverlay: {fileID: 2800000, guid: d96c8fc0d40d1ab4eb148e80aef963f9, type: 3}
 --- !u!1 &645687048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,7 +2973,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1441305596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00900799409, y: 1.47080338, z: -10}
+  m_LocalPosition: {x: .00900799409, y: 1.47080302, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3551,7 +3566,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 24fa62ddf9f21e64c99f9d21de65b530, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .349999994
+  m_Volume: .25
   m_Pitch: .699999988
   Loop: 1
   Mute: 0

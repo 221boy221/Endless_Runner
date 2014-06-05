@@ -27,4 +27,11 @@ public class PlayerXP : MonoBehaviour
             Awake();
         }
     }
+
+	public float Xp {
+		get { return xp; }
+	}
+	public float XpToLevelUp {
+		get { return lvlUpXP; }
+	}
 }

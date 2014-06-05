@@ -22,7 +22,10 @@ public class portalScript : MonoBehaviour {
 			for(int i = 0;i < allEnemies.Length; i++){
 				Destroy(allEnemies[i]);
 			}
-			Destroy(this.gameObject);
+			audio.Play();
+			if(!audio.isPlaying){
+				Destroy(this.gameObject);
+			}
 		}
 	}
 }

@@ -26,7 +26,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Enemy2(version2walk)
-  m_Speed: 1
+  m_Speed: 1.5
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 0541d62ced0d1654abc88e3b109a02c6, type: 2}
