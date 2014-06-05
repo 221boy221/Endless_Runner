@@ -8,7 +8,6 @@ public class XpbarScript : MonoBehaviour {
 	[SerializeField] private Texture2D xpOverlay;
 	
 	private PlayerXP playerXp;
-	private Vector2 position;
 	
 	protected bool paused = false;
 	
@@ -20,10 +19,6 @@ public class XpbarScript : MonoBehaviour {
 	
 	void GamePause() {  // This function will run when the player presses esc, because of the GamePause.cs
 		paused = (!paused) ? true : false;  // This is basically: if (paused = true) paused = false; else paused = true;
-	}
-	
-	void Update() {
-		position = Camera.main.WorldToScreenPoint(transform.position);
 	}
 	
 	void OnGUI() {

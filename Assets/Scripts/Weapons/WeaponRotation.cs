@@ -9,6 +9,7 @@ public class WeaponRotation : MonoBehaviour {
     private float nextFireTime;
     public float fireRate = 0.2f;
     public GameObject bullet1;  // Holds all bullets
+	public GameObject bulletSpawn;
     private WeaponSwitching weaponSwitching;
     Vector2 mousePos;
 
@@ -29,6 +30,7 @@ public class WeaponRotation : MonoBehaviour {
 
 	void Awake() {
         weaponSwitching = GameObject.FindGameObjectWithTag("Player").GetComponent<WeaponSwitching>();
+		//bulletSpawn = GameObject.FindGameObjectWithTag("BulletSpawn");
         ammo = maxAmmo;
 	}
 
@@ -81,7 +83,7 @@ public class WeaponRotation : MonoBehaviour {
 
 	void SchootBullet() {
         nextFireTime = Time.time + weaponSwitching.fireRate; // This adds the delay
-        Instantiate (bullet1,new Vector3(transform.position.x,transform.position.y, transform.position.z + 0.1f), this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^
+        Instantiate (bullet1,bulletSpawn.transform.position, this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^
 		ammo--;
 		Debug.Log (ammo);
 		audio.clip = shootSound;
