@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerSkillpoints : MonoBehaviour {
 
-    private float Skillpoints = 0.0f;
+    public float Skillpoints = 0.0f;
     private GamePause gamePause;
     public GUIText SkillpointsText;
 

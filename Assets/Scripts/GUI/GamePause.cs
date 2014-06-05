@@ -41,13 +41,10 @@ public class GamePause:MonoBehaviour {
         GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), pauseBG);
         GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3 ((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
 		GUI.Box(new Rect(-1, -1, 1922, 1082), new GUIContent());
-        
-        // UPGRADES 
-        if (hasSkillpoints) {
-            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 100, 150, 25), "You have skillpoints!"); 
-        }
+        // Show skillpoints
+        GUI.Label(new Rect(500, 150, 256, 50), new GUIContent("You have " + playerSkillpoints.Skillpoints + " skillpoint(s) left."), labelStyle); 
         // Fire rate
-        GUI.Label(new Rect(350, 275, 256, 50), new GUIContent("Fire Rate: " + firerateLvl), labelStyle);
+        GUI.Label(new Rect(300, 275, 256, 50), new GUIContent("Fire Rate - Lvl " + firerateLvl), labelStyle);
         if (GUI.Button(new Rect(500, 250, 75, 75), new GUIContent(), upgradeStyle)) {
             if (hasSkillpoints) {
                 if (firerateLvl < 3) {
@@ -64,7 +61,7 @@ public class GamePause:MonoBehaviour {
             }
         }
         // Health
-        GUI.Label(new Rect(350, 375, 256, 50), new GUIContent("Health +50 "), labelStyle);
+        GUI.Label(new Rect(355, 375, 256, 50), new GUIContent("Health +50 "), labelStyle);
         if (GUI.Button(new Rect(500, 350, 75, 75), new GUIContent(), upgradeStyle)) {
             if (hasSkillpoints) {
                 if (playerHealth.GetHealth < 100) {
@@ -78,7 +75,7 @@ public class GamePause:MonoBehaviour {
             }
         }
         // Damage
-        GUI.Label(new Rect(850, 275, 256, 50), new GUIContent("Damage: " + damageLvl), labelStyle);
+        GUI.Label(new Rect(810, 275, 256, 50), new GUIContent("Damage - Lvl " + damageLvl), labelStyle);
         if (GUI.Button(new Rect(1000, 250, 75, 75), new GUIContent(), upgradeStyle)) {
             if (hasSkillpoints) {
                 if (damageLvl < 3) {
@@ -94,7 +91,7 @@ public class GamePause:MonoBehaviour {
             }
         }
         // Ammo
-        GUI.Label(new Rect(850, 375, 256, 50), new GUIContent("Ammo: " + ammoLvl), labelStyle);
+        GUI.Label(new Rect(830, 375, 256, 50), new GUIContent("Ammo - Lvl " + ammoLvl), labelStyle);
         if (GUI.Button(new Rect(1000, 350, 75, 75), new GUIContent(), upgradeStyle)) {
             if (hasSkillpoints) {
                 if (ammoLvl < 3) {

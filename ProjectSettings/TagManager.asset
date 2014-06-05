@@ -6,7 +6,7 @@ TagManager:
   - Bullet1
   - Bullet2
   - Enemy
-  - 
+  - Weapon
   - PlayerSkillpointsUI
   - PlayerXPUI
   - PlayerLvlUI

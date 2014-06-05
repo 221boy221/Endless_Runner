@@ -62,7 +62,7 @@ public class WeaponRotation : MonoBehaviour {
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.R) && !reloading){
+        if(Input.GetKeyDown(KeyCode.R) && !reloading) {
             ammo = 0;
             Reload();
         }
