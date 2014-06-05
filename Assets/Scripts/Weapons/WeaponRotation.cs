@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class WeaponRotation : MonoBehaviour {
-
+    
+    [SerializeField] private GUIStyle labelStyle;
     protected bool paused = false;
 
     // Shooting
@@ -23,10 +24,7 @@ public class WeaponRotation : MonoBehaviour {
 	//audio
 	public AudioClip startReloadSound;
 	public AudioClip finishReloadSound;
-	public AudioClip shootSound;
-
-    
-
+    public AudioClip shootSound;
 
 	void Awake() {
         weaponSwitching = GameObject.FindGameObjectWithTag("Player").GetComponent<WeaponSwitching>();
@@ -79,6 +77,11 @@ public class WeaponRotation : MonoBehaviour {
                 reloading = false;
             }
         }
+    }
+
+    void OnGUI() {
+        GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
+        GUI.Label(new Rect(10, 10, 256, 50), new GUIContent("Ammo: " + ammo + " / " + maxAmmo), labelStyle);
     }
 
 	void SchootBullet() {
