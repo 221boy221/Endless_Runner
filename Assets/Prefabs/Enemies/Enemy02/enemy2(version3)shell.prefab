@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptEnemy:
-    movementSpeed: 1.5
+    movementSpeed: 1.60000002
     health: 240
     attackDamage: 30
     scoreValue: 150
