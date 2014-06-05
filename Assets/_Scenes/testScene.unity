@@ -1202,6 +1202,7 @@ GameObject:
   - 114: {fileID: 642311334}
   - 114: {fileID: 642311333}
   - 61: {fileID: 642311332}
+  - 114: {fileID: 642311335}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1266,6 +1267,20 @@ MonoBehaviour:
   - {fileID: 1599398036}
   - {fileID: 1289536230}
   currentWeapon: 0
+--- !u!114 &642311335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642311330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 376055d6d7c8327469a249021eb4c35d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xpBar: {fileID: 2800000, guid: 73107caa074b3df44a67a26ec9c92719, type: 3}
+  xpBackground: {fileID: 2800000, guid: 41ab737d0b7674146b83cd59471f2843, type: 3}
+  xpOverlay: {fileID: 2800000, guid: 7019b7a137b8b0c42a393ca05f511a45, type: 3}
 --- !u!1 &645687048
 GameObject:
   m_ObjectHideFlags: 0
