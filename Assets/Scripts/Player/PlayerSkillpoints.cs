@@ -8,7 +8,7 @@ public class PlayerSkillpoints : MonoBehaviour {
     public GUIText SkillpointsText;
 
     void Awake() {
-        gamePause = GameObject.FindGameObjectWithTag("GameController").GetComponent<GamePause>();
+        gamePause = GameObject.FindGameObjectWithTag("PauseMenu").GetComponent<GamePause>();
         SkillpointsText = GameObject.FindGameObjectWithTag("PlayerSkillpointsUI").GetComponent<GUIText>();
         SkillpointsText.text = "Skillpoints: " + Skillpoints;
     }
