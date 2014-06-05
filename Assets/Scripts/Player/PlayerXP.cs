@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class PlayerXP : MonoBehaviour {
+
     [SerializeField] private GUIStyle labelStyle;
     private float xp = 0.0f;
     private float lvlUpXP = 1000.0f;
