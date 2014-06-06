@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour {
     
     void Dead() {
         Debug.Log("You are dead.");
+		BulletsScript.damage = 50f;
         Application.LoadLevel("gameOver");
     }
 }

@@ -6,6 +6,7 @@ public class BulletsScript : MonoBehaviour {
 	public float destroyTime;
 	public float speed;
 	public static float damage = 50.0f;
+//	public static float GetDamage { get { return damage; } }
     private float damageLvl;
     private GamePause gamePause;
 
@@ -39,4 +40,5 @@ public class BulletsScript : MonoBehaviour {
             Debug.Log("Current damage: " + damage);
         }
     }
+	
 }
