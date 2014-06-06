@@ -18,7 +18,7 @@ public class PlayerXP : MonoBehaviour {
         if (xp >= lvlUpXP) {   
             xp -= lvlUpXP;
             playerLvl.IncreaseValue(1);
-            lvlUpXP += (500 + (lvlUpXP / 4));
+			lvlUpXP += Mathf.Floor((500 + (lvlUpXP / 4)));
             Awake();
         }
     }

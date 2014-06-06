@@ -171,10 +171,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptEnemy:
     movementSpeed: 1.60000002
-    health: 240
+    health: 300
     attackDamage: 30
     scoreValue: 150
-    xpValue: 250
+    xpValue: 270
   nextTransform: {fileID: 0}
   deathAnim: {fileID: 100000, guid: 411e5002eb849b54683d2c1f3b58e522, type: 2}
   weakness: {fileID: 100000, guid: c325aa60bad0d9a4e82b444114c110b3, type: 2}
