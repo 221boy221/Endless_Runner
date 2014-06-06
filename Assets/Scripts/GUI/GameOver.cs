@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+// Gemaakt door Boy
 
 public class GameOver : MonoBehaviour {
 

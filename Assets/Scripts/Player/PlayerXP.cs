@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+// Gemaakt door grootendeels Boy en get set funcite door Ramses
 public class PlayerXP : MonoBehaviour {
 
     [SerializeField] private GUIStyle labelStyle;

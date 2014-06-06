@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Gemaakt door Ramses
+
 public class EnemySpawner : MonoBehaviour {
 
 	public GameObject enemy1;

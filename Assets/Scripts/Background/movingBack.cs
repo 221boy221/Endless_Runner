@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Gemaakt door Ramses
+
 public class movingBack : MonoBehaviour {
 
 	public float speed = 0;

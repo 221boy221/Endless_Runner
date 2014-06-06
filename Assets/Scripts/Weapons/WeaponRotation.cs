@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+// Gemaakt door Boy en Ramses (evenveel)
 
 public class WeaponRotation : MonoBehaviour {
     

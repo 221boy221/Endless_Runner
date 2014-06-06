@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Gemaakt door Boy
+
 public class WeaponSwitching : MonoBehaviour {
 
     private int nrWeapons;

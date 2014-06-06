@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Gemaakt door Boy
+
 public class PlayerHealth : MonoBehaviour {
 
     private float health = 100.0f;
@@ -25,7 +27,7 @@ public class PlayerHealth : MonoBehaviour {
     
     void Dead() {
         Debug.Log("You are dead.");
-		BulletsScript.damage = 50f;
+		BulletsScript.damage = 50f; 
         Application.LoadLevel("gameOver");
     }
 }

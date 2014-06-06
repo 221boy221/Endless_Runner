@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Gemaakt door Boy
+
 public class PlayerSkillpoints : MonoBehaviour {
 
     public float Skillpoints = 0.0f;

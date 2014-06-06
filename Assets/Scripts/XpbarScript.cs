@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+// Gemaakt door Ramses
 public class XpbarScript : MonoBehaviour {
 
 	[SerializeField] private Texture2D xpBar;

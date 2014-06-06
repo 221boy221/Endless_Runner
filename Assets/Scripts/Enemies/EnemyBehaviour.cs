@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Gemaakt door grootendeels Ramses en kleine toevoeging Boy
+
 public class EnemyBehaviour : MonoBehaviour {
 
 	public GlobalEnemyScript scriptEnemy;

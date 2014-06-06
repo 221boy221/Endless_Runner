@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Gemaakt door Boy
+
 public class MainMenu:MonoBehaviour {
+
 
 	[SerializeField] private Texture2D logo;
     [SerializeField] private Texture2D menuBG;
