@@ -81,7 +81,7 @@ public class WeaponRotation : MonoBehaviour {
 
     void OnGUI() {
         GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
-        GUI.Label(new Rect(10, 10, 256, 50), new GUIContent("Ammo: " + ammo + " / " + maxAmmo), labelStyle);
+        GUI.Label(new Rect(10, 10, 256, 50), new GUIContent("Ammo: " + ammo + " / " + weaponSwitching.maxAmmo), labelStyle);
     }
 
 	void SchootBullet() {
