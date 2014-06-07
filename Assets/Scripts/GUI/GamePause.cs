@@ -52,13 +52,9 @@ public class GamePause:MonoBehaviour {
                     firerateLvl += 1;
                     playerSkillpoints.IncreaseValue(-1);
                     weaponSwitching.UpdateFireRate(firerateLvl);
-                    Debug.Log("Skillpoint spent");
-                } else {
-                    Debug.Log("Maxed out");
                 }
             } else {
                 GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
-                Debug.Log("No Skillpoints");
             }
         }
         // Health
@@ -68,11 +64,9 @@ public class GamePause:MonoBehaviour {
                 if (playerHealth.GetHealth < 100) {
                     playerHealth.IncreaseHealth(50);
                     playerSkillpoints.IncreaseValue(-1);
-                    Debug.Log("Skillpoint spent");
                 }
             } else {
                 GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
-                Debug.Log("No Skillpoints");
             }
         }
         // Damage
@@ -82,13 +76,9 @@ public class GamePause:MonoBehaviour {
                 if (damageLvl < 3) {
                     damageLvl += 1;
                     playerSkillpoints.IncreaseValue(-1);
-                    Debug.Log("Skillpoint spent");
-                } else {
-                    Debug.Log("Maxed out");
                 }
             } else {
                 GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
-                Debug.Log("No Skillpoints");
             }
         }
         // Ammo
@@ -99,13 +89,9 @@ public class GamePause:MonoBehaviour {
                     ammoLvl += 1;
                     weaponSwitching.UpdateAmmo(ammoLvl);
                     playerSkillpoints.IncreaseValue(-1);
-                    Debug.Log("Skillpoint spent");
-                } else {
-                    Debug.Log("Maxed out");
                 }
             } else {
                 GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
-                Debug.Log("No Skillpoints");
             }
         }
         // MENU 

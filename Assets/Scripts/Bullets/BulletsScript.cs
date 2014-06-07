@@ -33,13 +33,10 @@ public class BulletsScript : MonoBehaviour {
         damageLvl = gamePause.damageLvl;
         if (damageLvl == 1) {
             damage = 70.0f;
-            Debug.Log("Current damage: " + damage);
         } else if (damageLvl == 2) {
             damage = 90.0f;
-            Debug.Log("Current damage: " + damage);
         } else if (damageLvl == 3) {
             damage = 110.0f;
-            Debug.Log("Current damage: " + damage);
         }
     }
 	

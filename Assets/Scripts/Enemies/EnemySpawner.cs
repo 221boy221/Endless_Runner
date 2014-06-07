@@ -38,7 +38,6 @@ public class EnemySpawner : MonoBehaviour {
 		int chooseSpawnType = Random.Range (1, 5);
 		int chooseEnemyToSpawn = Random.Range(1, 3);
 
-		Debug.Log(chooseEnemyToSpawn);
 		if (chooseSpawnType == 1) {
 			if (chooseEnemyToSpawn == 1) {
 				SpawnEnemy (enemy1);

@@ -70,7 +70,6 @@ public class WeaponRotation : MonoBehaviour {
         // tijd dat de speler aan het reloaden is. De groter de var reloadSpeed. De langer de tijd van reloaden.
         if (reloading) {
             counter -= Time.deltaTime;
-            Debug.Log(counter);
             if (counter <= 0) {
                 audio.clip = finishReloadSound;
                 audio.Play();
@@ -89,7 +88,6 @@ public class WeaponRotation : MonoBehaviour {
         nextFireTime = Time.time + weaponSwitching.fireRate; // This adds the delay
         Instantiate (bullet1,bulletSpawn.transform.position, this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^
 		ammo--;
-		Debug.Log (ammo);
 		audio.clip = shootSound;
 		audio.Play ();
 	}

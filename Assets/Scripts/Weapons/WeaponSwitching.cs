@@ -51,16 +51,12 @@ public class WeaponSwitching : MonoBehaviour {
         firerateLvl = fireRateLvl;
         if (fireRateLvl == 0) {
             fireRate = 0.2f;
-            Debug.Log(fireRate);
         } else if (fireRateLvl == 1) {
             fireRate = 0.15f;
-            Debug.Log(fireRate);
         } else if (fireRateLvl == 2) {
             fireRate = 0.1f;
-            Debug.Log(fireRate);
         } else {
             fireRate = 0.05f;
-            Debug.Log(fireRate);
         }
     }
 
@@ -68,16 +64,12 @@ public class WeaponSwitching : MonoBehaviour {
         ammolvl = ammoLvl;
         if (ammoLvl == 0) {
             maxAmmo = 5.0f;
-            Debug.Log(maxAmmo);
         } else if (ammoLvl == 1) {
             maxAmmo = 8.0f;
-            Debug.Log(maxAmmo);
         } else if (ammoLvl == 2) {
             maxAmmo = 12.0f;
-            Debug.Log(maxAmmo);
         } else {
             maxAmmo = 15.0f;
-            Debug.Log(maxAmmo);
         }
     }
 }

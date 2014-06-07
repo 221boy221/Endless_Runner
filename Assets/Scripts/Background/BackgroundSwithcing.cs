@@ -15,7 +15,7 @@ public class BackgroundSwithcing : MonoBehaviour {
 	void Awake () {
 		nrBackgrounds = backgrounds.Length;
 		currentBackground = nrBackgrounds + 1; //anders kiest hij de eerste niet
-		chooseBackground (); // <------------ voor test van background change. Moet vervangen worden met "chooseBackground"
+		chooseBackground ();
 	}
 
 	public void chooseBackground(){
