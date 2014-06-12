@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+
 // Gemaakt door Boy
 
 public class GamePause:MonoBehaviour {
@@ -32,7 +33,7 @@ public class GamePause:MonoBehaviour {
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             TogglePause();
-        }	
+        }
     }
 
     void OnGUI() {
@@ -42,11 +43,17 @@ public class GamePause:MonoBehaviour {
         GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), pauseBG);
         GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3 ((float)Screen.width / 1920.0f, (float)Screen.height / 1080.0f, 1));
 		GUI.Box(new Rect(-1, -1, 1922, 1082), new GUIContent());
-        // Show skillpoints
+
+        // Lables
         GUI.Label(new Rect(500, 150, 256, 50), new GUIContent("You have " + playerSkillpoints.Skillpoints + " skillpoint(s) left."), labelStyle); 
-        // Fire rate
         GUI.Label(new Rect(300, 275, 256, 50), new GUIContent("Fire Rate - Lvl " + firerateLvl), labelStyle);
-        if (GUI.Button(new Rect(500, 250, 75, 75), new GUIContent(), upgradeStyle)) {
+        GUI.Label(new Rect(355, 375, 256, 50), new GUIContent("Health +50 "), labelStyle);
+        GUI.Label(new Rect(810, 275, 256, 50), new GUIContent("Damage - Lvl " + damageLvl), labelStyle);
+        GUI.Label(new Rect(830, 375, 256, 50), new GUIContent("Ammo - Lvl " + ammoLvl), labelStyle);
+        GUI.Label(new Rect(832, 520, 256, 50), new GUIContent("Game Paused"), labelStyle);
+
+        // Buttons
+        if (GUI.Button(new Rect(500, 250, 75, 75), new GUIContent(), upgradeStyle)) {           /* FIRE RATE */
             if (hasSkillpoints) {
                 if (firerateLvl < 3) {
                     firerateLvl += 1;
@@ -56,10 +63,7 @@ public class GamePause:MonoBehaviour {
             } else {
                 GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
             }
-        }
-        // Health
-        GUI.Label(new Rect(355, 375, 256, 50), new GUIContent("Health +50 "), labelStyle);
-        if (GUI.Button(new Rect(500, 350, 75, 75), new GUIContent(), upgradeStyle)) {
+        } else if (GUI.Button(new Rect(500, 350, 75, 75), new GUIContent(), upgradeStyle)) {    /* HEALTH */
             if (hasSkillpoints) {
                 if (playerHealth.GetHealth < 100) {
                     playerHealth.IncreaseHealth(50);
@@ -68,10 +72,7 @@ public class GamePause:MonoBehaviour {
             } else {
                 GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
             }
-        }
-        // Damage
-        GUI.Label(new Rect(810, 275, 256, 50), new GUIContent("Damage - Lvl " + damageLvl), labelStyle);
-        if (GUI.Button(new Rect(1000, 250, 75, 75), new GUIContent(), upgradeStyle)) {
+        } else if (GUI.Button(new Rect(1000, 250, 75, 75), new GUIContent(), upgradeStyle)) {   /* DAMAGE */
             if (hasSkillpoints) {
                 if (damageLvl < 3) {
                     damageLvl += 1;
@@ -80,10 +81,7 @@ public class GamePause:MonoBehaviour {
             } else {
                 GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
             }
-        }
-        // Ammo
-        GUI.Label(new Rect(830, 375, 256, 50), new GUIContent("Ammo - Lvl " + ammoLvl), labelStyle);
-        if (GUI.Button(new Rect(1000, 350, 75, 75), new GUIContent(), upgradeStyle)) {
+        } else if (GUI.Button(new Rect(1000, 350, 75, 75), new GUIContent(), upgradeStyle)) {   /* AMMO */
             if (hasSkillpoints) {
                 if (ammoLvl < 3) {
                     ammoLvl += 1;
@@ -93,15 +91,12 @@ public class GamePause:MonoBehaviour {
             } else {
                 GUI.Label(new Rect(Screen.width / 2 - 60, Screen.height - 100, 150, 25), "NO SKILLPOINTS");
             }
-        }
-        // MENU 
-		GUI.Label(new Rect(832, 520, 256, 50), new GUIContent("Game Paused"), labelStyle);
-
-		if (GUI.Button(new Rect(832, 600, 150, 150), new GUIContent(), resumeStyle)) {
+        } else if (GUI.Button(new Rect(832, 600, 150, 150), new GUIContent(), resumeStyle)) {   /* RESUME */
 			TogglePause();
-		} else if (GUI.Button(new Rect(832, 800, 150, 150), new GUIContent(), mainmenuStyle)) {
+		} else if (GUI.Button(new Rect(832, 800, 150, 150), new GUIContent(), mainmenuStyle)) { /* MAIN MENU */
 			Application.LoadLevel("MainMenu");
 		}
+        
     }
 
     public void TogglePause() {

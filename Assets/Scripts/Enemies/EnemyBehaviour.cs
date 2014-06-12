@@ -6,22 +6,17 @@ using System.Collections;
 public class EnemyBehaviour : MonoBehaviour {
 
 	public GlobalEnemyScript scriptEnemy;
-
 	public GameObject nextTransform;
 	public GameObject deathAnim;
-
 	public GameObject weakness;
 	public GameObject strength;
+    public AudioClip transformSound;
+	public AudioClip attackSound;
 
     private PlayerXP playerXP;
 	private PlayerHealth playerHealth;
     private PlayerKills playerKills;
-
-	public AudioClip transformSound;
-	public AudioClip attackSound;
-
 	private bool tfm = false;
-
 	Animator anim;
 	
 	void Awake() {
@@ -41,8 +36,9 @@ public class EnemyBehaviour : MonoBehaviour {
 	}
 
 	virtual protected void Movement() {
-		transform.Translate (new Vector2(-scriptEnemy.movementSpeed,0)*Time.deltaTime,Space.World);
+		transform.Translate(new Vector2(-scriptEnemy.movementSpeed,0)*Time.deltaTime,Space.World);
 	}
+
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.tag == weakness.gameObject.tag) {
 			//BulletsScript bs = other.GetComponent<BulletsScript>() as BulletsScript);
@@ -57,7 +53,6 @@ public class EnemyBehaviour : MonoBehaviour {
 	}
 
 	void GetStronger() {
-
 		if (nextTransform != null && !tfm) {
 			tfm = true;
 			Vector2 offset = new Vector2(transform.position.x,transform.position.y + 0.15f);
@@ -68,7 +63,6 @@ public class EnemyBehaviour : MonoBehaviour {
 			audio.Play ();
 			scriptEnemy.movementSpeed = 1.5f;
 			Invoke ("TransformEnemy", 0.85f);
-
 		}
 	}
 
@@ -77,7 +71,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		Destroy (this.gameObject);
 	}
 
-	void GetDamage (float dmg) {
+	void GetDamage(float dmg) {
         scriptEnemy.health -= dmg;
         if (scriptEnemy.health <= 0) {
 			Death();
@@ -86,12 +80,11 @@ public class EnemyBehaviour : MonoBehaviour {
 		}
 	}
 
-	void Attack (){
+	void Attack() {
 		audio.clip = attackSound;
 		audio.volume = 0.5f;
-		audio.Play ();
+		audio.Play();
 		playerHealth.TakeDamage (scriptEnemy.attackDamage);
-
 	}
 
     public float Health {

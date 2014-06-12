@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+
 // Gemaakt door Boy en Ramses (evenveel)
 
 public class WeaponRotation : MonoBehaviour {
     
     [SerializeField] private GUIStyle labelStyle;
     protected bool paused = false;
-
     // Shooting
     private float nextFireTime;
     public float fireRate = 0.2f;
@@ -14,14 +14,12 @@ public class WeaponRotation : MonoBehaviour {
 	public GameObject bulletSpawn;
     private WeaponSwitching weaponSwitching;
     Vector2 mousePos;
-
 	// Reload variables
 	private float maxAmmo = 5;
 	private float ammo;
 	private float reloadTime = 1.5f;
 	private float counter;
 	private bool reloading = false;
-
 	//audio
 	public AudioClip startReloadSound;
 	public AudioClip finishReloadSound;
@@ -63,7 +61,7 @@ public class WeaponRotation : MonoBehaviour {
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.R) && !reloading) {
+        if (Input.GetKeyDown(KeyCode.R) && !reloading) {
             ammo = 0;
             Reload();
         }
@@ -89,10 +87,10 @@ public class WeaponRotation : MonoBehaviour {
         Instantiate (bullet1,bulletSpawn.transform.position, this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^
 		ammo--;
 		audio.clip = shootSound;
-		audio.Play ();
+		audio.Play();
 	}
 
-	void Reload () {
+	void Reload() {
 		audio.clip = startReloadSound;
 		audio.Play ();
 		reloading = true;

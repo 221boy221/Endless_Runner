@@ -50,22 +50,22 @@ public class EnemySpawner : MonoBehaviour {
 			} else if (chooseEnemyToSpawn == 2) {
 				Spawn2Enemies (enemy2,enemy1);
 			}	
-		}else if (chooseSpawnType == 3){
-			if(chooseEnemyToSpawn == 1){
+		} else if (chooseSpawnType == 3) {
+			if (chooseEnemyToSpawn == 1) {
 				SpawnEnemy(enemy1Num2);
-			}else if(chooseEnemyToSpawn == 2){
+			} else if (chooseEnemyToSpawn == 2) {
 				SpawnEnemy(enemy2Num2);
 			}
-		}else{
+		} else {
 			portalCounter ++;
 
-			if(portalCounter == 5){
+			if (portalCounter == 5) {
 				portalCounter = 0;
 				Instantiate(portal, new Vector2 (4, 0.48f), this.transform.rotation);
-			}else{
-				if(chooseEnemyToSpawn == 1){
+			} else {
+				if (chooseEnemyToSpawn == 1) {
 					Spawn2Enemies(enemy1,enemy1);
-				}else{
+				} else {
 					Spawn2Enemies(enemy2,enemy2);
 				}
 			}
