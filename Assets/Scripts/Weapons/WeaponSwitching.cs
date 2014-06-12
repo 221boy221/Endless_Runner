@@ -72,4 +72,5 @@ public class WeaponSwitching : MonoBehaviour {
             maxAmmo = 15.0f;
         }
     }
+
 }

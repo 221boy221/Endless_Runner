@@ -9,11 +9,11 @@ public class portalScript : MonoBehaviour {
 
 	GameObject[] allEnemies;
 
-	void Awake(){
+	void Awake() {
 		backgroundswitch = GameObject.FindGameObjectWithTag("GameController").GetComponent<BackgroundSwithcing>();
 	}
 
-	void Update(){
+	void Update() {
 		transform.Translate (new Vector2(-0.9f,0)*Time.deltaTime,Space.World);
 	}
 
@@ -21,13 +21,14 @@ public class portalScript : MonoBehaviour {
 		if (other.gameObject.tag == "Player") {
 			backgroundswitch.changeLevel();
 			allEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-			for(int i = 0;i < allEnemies.Length; i++){
+			for (int i = 0;i < allEnemies.Length; i++) {
 				Destroy(allEnemies[i]);
 			}
 			audio.Play();
-			if(!audio.isPlaying){
+			if (!audio.isPlaying) {
 				Destroy(this.gameObject);
 			}
 		}
 	}
+
 }

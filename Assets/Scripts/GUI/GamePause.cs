@@ -101,10 +101,11 @@ public class GamePause:MonoBehaviour {
 
     public void TogglePause() {
         Object[] objects = FindObjectsOfType(typeof(GameObject));
-        // This will send a message to all GameObjects to run "GamePause"
+        // This will send a message to all GameObjects to run "GamePause()"
         foreach (GameObject go in objects) { 
             go.SendMessage("GamePause", SendMessageOptions.DontRequireReceiver);
         }
         Time.timeScale = (Time.timeScale == 0) ? 1 : 0; // If it's 0 make it 1, else if 1 make it 0
     }
+
 }

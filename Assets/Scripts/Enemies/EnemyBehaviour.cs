@@ -26,7 +26,6 @@ public class EnemyBehaviour : MonoBehaviour {
 		anim = GetComponent<Animator>();
 	}
 
-
 	void Update() {
 		Movement();
 
@@ -62,13 +61,13 @@ public class EnemyBehaviour : MonoBehaviour {
 			audio.clip = transformSound;
 			audio.Play ();
 			scriptEnemy.movementSpeed = 1.5f;
-			Invoke ("TransformEnemy", 0.85f);
+			Invoke("TransformEnemy", 0.85f);
 		}
 	}
 
 	void TransformEnemy() {
 		Instantiate (nextTransform, this.transform.position, this.transform.rotation);
-		Destroy (this.gameObject);
+		Destroy(this.gameObject);
 	}
 
 	void GetDamage(float dmg) {
@@ -91,11 +90,11 @@ public class EnemyBehaviour : MonoBehaviour {
         get { return scriptEnemy.health; }
     }
 
-
 	void Death() {
 		if (deathAnim != null) {
 			Instantiate (deathAnim, this.transform.position, this.transform.rotation);
 		}
-		Destroy (this.gameObject);
+		Destroy(this.gameObject);
 	}
+
 }

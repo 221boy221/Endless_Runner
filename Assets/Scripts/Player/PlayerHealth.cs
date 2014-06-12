@@ -19,10 +19,6 @@ public class PlayerHealth : MonoBehaviour {
         }
     }
 
-    public void SetHealth(float hp) {
-        health = hp;
-    }
-
     public void IncreaseHealth(float hp) {
         health += hp;
         if (health > 100) {
