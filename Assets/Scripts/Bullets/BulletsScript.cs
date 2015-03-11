@@ -8,7 +8,7 @@ public class BulletsScript : MonoBehaviour {
 	public float destroyTime;
 	public float speed;
 	public static float damage = 50.0f;
-//	public static float GetDamage { get { return damage; } }
+
     private float damageLvl;
     private GamePause gamePause;
 
@@ -25,7 +25,7 @@ public class BulletsScript : MonoBehaviour {
 	// Removes the bullet on touch
     private void OnTriggerEnter2D(Collider2D other) {
 		if (other.transform.tag != "Player") {
-			Destroy (this.gameObject);
+			Destroy(this.gameObject);
 		}
 	}
 

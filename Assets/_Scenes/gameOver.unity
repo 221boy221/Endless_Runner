@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2932c127b8c0134abd46e3f12ad05b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameoverBG: {fileID: 2800000, guid: 97e7fda2066638449a981679af908a6d, type: 3}
+  gameoverBG: {fileID: 2800000, guid: eefc3dd3a442f11459f6a1206530a83f, type: 3}
   retryStyle:
     m_Name: 
     m_Normal:

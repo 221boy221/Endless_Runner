@@ -27,4 +27,5 @@ public class PlayerSkillpoints : MonoBehaviour {
             gamePause.hasSkillpoints = false;
         }
     }
+
 }

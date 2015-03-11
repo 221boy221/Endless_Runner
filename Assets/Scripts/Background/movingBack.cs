@@ -11,12 +11,12 @@ public class movingBack : MonoBehaviour {
 	float pos = 0;
 
 	// Use this for initialization
-	void Start () {
+	void Start() {
 		current = this;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update() {
 		pos += speed * Time.deltaTime;
 		if(pos > 1.0f)
 			pos = 0f;
