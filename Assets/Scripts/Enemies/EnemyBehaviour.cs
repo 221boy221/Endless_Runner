@@ -23,11 +23,14 @@ public class EnemyBehaviour : MonoBehaviour {
 	private bool tfm = false;
 
 	Animator anim;
-	
+
+	AudioControll ac;
+
 	void Awake() {
+		ac = GameObject.FindGameObjectWithTag ("AudioController").GetComponent<AudioControll> ();
         playerXP = GameObject.FindGameObjectWithTag("PlayerXPUI").GetComponent<PlayerXP>();
 		playerHealth = GameObject.FindGameObjectWithTag("PlayerHealthUI").GetComponent<PlayerHealth>();
-        playerKills = GameObject.FindGameObjectWithTag("PlayerKillsUI").GetComponent<PlayerKills>();
+		playerKills = GameObject.FindGameObjectWithTag ("PlayerKillsUI").GetComponent<PlayerKills> ();
 		anim = GetComponent<Animator>();
 	}
 
@@ -64,8 +67,8 @@ public class EnemyBehaviour : MonoBehaviour {
 			transform.position = offset;
 
 			anim.Play("EnemyTransformation1");
-			audio.clip = transformSound;
-			audio.Play ();
+			GetComponent<AudioSource>().clip = transformSound;
+			GetComponent<AudioSource>().Play ();
 			scriptEnemy.movementSpeed = 1.5f;
 			Invoke ("TransformEnemy", 0.85f);
 
@@ -87,9 +90,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	}
 
 	void Attack (){
-		audio.clip = attackSound;
-		audio.volume = 0.5f;
-		audio.Play ();
+		ac.PlayAudio (ac.attacksound);
 		playerHealth.TakeDamage (scriptEnemy.attackDamage);
 
 	}

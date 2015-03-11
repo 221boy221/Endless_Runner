@@ -71,8 +71,8 @@ public class WeaponRotation : MonoBehaviour {
         if (reloading) {
             counter -= Time.deltaTime;
             if (counter <= 0) {
-                audio.clip = finishReloadSound;
-                audio.Play();
+                GetComponent<AudioSource>().clip = finishReloadSound;
+                GetComponent<AudioSource>().Play();
                 ammo = weaponSwitching.maxAmmo;
                 reloading = false;
             }
@@ -88,13 +88,13 @@ public class WeaponRotation : MonoBehaviour {
         nextFireTime = Time.time + weaponSwitching.fireRate; // This adds the delay
         Instantiate (bullet1,bulletSpawn.transform.position, this.transform.rotation); // hier word de kogel gemaakt. kijk in het kogel script hoe ik hem laat bewegen.("bulletsScript") ^^
 		ammo--;
-		audio.clip = shootSound;
-		audio.Play ();
+		GetComponent<AudioSource>().clip = shootSound;
+		GetComponent<AudioSource>().Play ();
 	}
 
 	void Reload () {
-		audio.clip = startReloadSound;
-		audio.Play ();
+		GetComponent<AudioSource>().clip = startReloadSound;
+		GetComponent<AudioSource>().Play ();
 		reloading = true;
 		counter = reloadTime;
 	}

@@ -1,6 +1,21 @@
 fileFormatVersion: 2
 guid: 3f028bbc02c1de141a9a2a6619941bb4
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemy2_transform2_0
+    21300002: Enemy2_transform2_1
+    21300004: Enemy2_transform2_2
+    21300006: Enemy2_transform2_3
+    21300008: Enemy2_transform2_4
+    21300010: Enemy2_transform2_5
+    21300012: Enemy2_transform2_6
+    21300014: Enemy2_transform2_7
+    21300016: Enemy2_transform2_8
+    21300018: Enemy2_transform2_9
+    21300020: Enemy2_transform2_10
+    21300022: Enemy2_transform2_11
+    21300024: Enemy2_transform2_12
+    21300026: Enemy2_transform2_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +50,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +70,7 @@ TextureImporter:
         height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_1
       rect:
         serializedVersion: 2
@@ -63,6 +80,7 @@ TextureImporter:
         height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_2
       rect:
         serializedVersion: 2
@@ -72,6 +90,7 @@ TextureImporter:
         height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_3
       rect:
         serializedVersion: 2
@@ -81,6 +100,7 @@ TextureImporter:
         height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_4
       rect:
         serializedVersion: 2
@@ -90,6 +110,7 @@ TextureImporter:
         height: 173
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_5
       rect:
         serializedVersion: 2
@@ -99,6 +120,7 @@ TextureImporter:
         height: 193
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_6
       rect:
         serializedVersion: 2
@@ -108,6 +130,7 @@ TextureImporter:
         height: 208
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_7
       rect:
         serializedVersion: 2
@@ -117,6 +140,7 @@ TextureImporter:
         height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_8
       rect:
         serializedVersion: 2
@@ -126,6 +150,7 @@ TextureImporter:
         height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_9
       rect:
         serializedVersion: 2
@@ -135,6 +160,7 @@ TextureImporter:
         height: 222
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_10
       rect:
         serializedVersion: 2
@@ -144,6 +170,7 @@ TextureImporter:
         height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_11
       rect:
         serializedVersion: 2
@@ -153,6 +180,7 @@ TextureImporter:
         height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_12
       rect:
         serializedVersion: 2
@@ -162,6 +190,7 @@ TextureImporter:
         height: 223
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform2_13
       rect:
         serializedVersion: 2
@@ -171,5 +200,6 @@ TextureImporter:
         height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

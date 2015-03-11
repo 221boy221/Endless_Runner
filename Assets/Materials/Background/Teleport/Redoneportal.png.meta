@@ -1,6 +1,67 @@
 fileFormatVersion: 2
 guid: b577dc73c9c673e4694840855ea7ec64
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Redoneportal_0
+    21300002: Redoneportal_1
+    21300004: Redoneportal_2
+    21300006: Redoneportal_3
+    21300008: Redoneportal_4
+    21300010: Redoneportal_5
+    21300012: Redoneportal_6
+    21300014: Redoneportal_7
+    21300016: Redoneportal_8
+    21300018: Redoneportal_9
+    21300020: Redoneportal_10
+    21300022: Redoneportal_11
+    21300024: Redoneportal_12
+    21300026: Redoneportal_13
+    21300028: Redoneportal_14
+    21300030: Redoneportal_15
+    21300032: Redoneportal_16
+    21300034: Redoneportal_17
+    21300036: Redoneportal_18
+    21300038: Redoneportal_19
+    21300040: Redoneportal_20
+    21300042: Redoneportal_21
+    21300044: Redoneportal_22
+    21300046: Redoneportal_23
+    21300048: Redoneportal_24
+    21300050: Redoneportal_25
+    21300052: Redoneportal_26
+    21300054: Redoneportal_27
+    21300056: Redoneportal_28
+    21300058: Redoneportal_29
+    21300060: Redoneportal_30
+    21300062: Redoneportal_31
+    21300064: Redoneportal_32
+    21300066: Redoneportal_33
+    21300068: Redoneportal_34
+    21300070: Redoneportal_35
+    21300072: Redoneportal_36
+    21300074: Redoneportal_37
+    21300076: Redoneportal_38
+    21300078: Redoneportal_39
+    21300080: Redoneportal_40
+    21300082: Redoneportal_41
+    21300084: Redoneportal_42
+    21300086: Redoneportal_43
+    21300088: Redoneportal_44
+    21300090: Redoneportal_45
+    21300092: Redoneportal_46
+    21300094: Redoneportal_47
+    21300096: Redoneportal_48
+    21300098: Redoneportal_49
+    21300100: Redoneportal_50
+    21300102: Redoneportal_51
+    21300104: Redoneportal_52
+    21300106: Redoneportal_53
+    21300108: Redoneportal_54
+    21300110: Redoneportal_55
+    21300112: Redoneportal_56
+    21300114: Redoneportal_57
+    21300116: Redoneportal_58
+    21300118: Redoneportal_59
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +116,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_1
       rect:
         serializedVersion: 2
@@ -63,6 +126,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_2
       rect:
         serializedVersion: 2
@@ -72,6 +136,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_3
       rect:
         serializedVersion: 2
@@ -81,6 +146,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_4
       rect:
         serializedVersion: 2
@@ -90,6 +156,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_5
       rect:
         serializedVersion: 2
@@ -99,6 +166,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_6
       rect:
         serializedVersion: 2
@@ -108,6 +176,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_7
       rect:
         serializedVersion: 2
@@ -117,6 +186,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_8
       rect:
         serializedVersion: 2
@@ -126,6 +196,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_9
       rect:
         serializedVersion: 2
@@ -135,6 +206,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_10
       rect:
         serializedVersion: 2
@@ -144,6 +216,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_11
       rect:
         serializedVersion: 2
@@ -153,6 +226,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_12
       rect:
         serializedVersion: 2
@@ -162,6 +236,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_13
       rect:
         serializedVersion: 2
@@ -171,6 +246,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_14
       rect:
         serializedVersion: 2
@@ -180,6 +256,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_15
       rect:
         serializedVersion: 2
@@ -189,6 +266,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_16
       rect:
         serializedVersion: 2
@@ -198,6 +276,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_17
       rect:
         serializedVersion: 2
@@ -207,6 +286,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_18
       rect:
         serializedVersion: 2
@@ -216,6 +296,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_19
       rect:
         serializedVersion: 2
@@ -225,6 +306,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_20
       rect:
         serializedVersion: 2
@@ -234,6 +316,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_21
       rect:
         serializedVersion: 2
@@ -243,6 +326,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_22
       rect:
         serializedVersion: 2
@@ -252,6 +336,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_23
       rect:
         serializedVersion: 2
@@ -261,6 +346,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_24
       rect:
         serializedVersion: 2
@@ -270,6 +356,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_25
       rect:
         serializedVersion: 2
@@ -279,6 +366,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_26
       rect:
         serializedVersion: 2
@@ -288,6 +376,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_27
       rect:
         serializedVersion: 2
@@ -297,6 +386,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_28
       rect:
         serializedVersion: 2
@@ -306,6 +396,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_29
       rect:
         serializedVersion: 2
@@ -315,6 +406,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_30
       rect:
         serializedVersion: 2
@@ -324,6 +416,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_31
       rect:
         serializedVersion: 2
@@ -333,6 +426,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_32
       rect:
         serializedVersion: 2
@@ -342,6 +436,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_33
       rect:
         serializedVersion: 2
@@ -351,6 +446,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_34
       rect:
         serializedVersion: 2
@@ -360,6 +456,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_35
       rect:
         serializedVersion: 2
@@ -369,6 +466,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_36
       rect:
         serializedVersion: 2
@@ -378,6 +476,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_37
       rect:
         serializedVersion: 2
@@ -387,6 +486,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_38
       rect:
         serializedVersion: 2
@@ -396,6 +496,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_39
       rect:
         serializedVersion: 2
@@ -405,6 +506,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_40
       rect:
         serializedVersion: 2
@@ -414,6 +516,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_41
       rect:
         serializedVersion: 2
@@ -423,6 +526,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_42
       rect:
         serializedVersion: 2
@@ -432,6 +536,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_43
       rect:
         serializedVersion: 2
@@ -441,6 +546,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_44
       rect:
         serializedVersion: 2
@@ -450,6 +556,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_45
       rect:
         serializedVersion: 2
@@ -459,6 +566,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_46
       rect:
         serializedVersion: 2
@@ -468,6 +576,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_47
       rect:
         serializedVersion: 2
@@ -477,6 +586,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_48
       rect:
         serializedVersion: 2
@@ -486,6 +596,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_49
       rect:
         serializedVersion: 2
@@ -495,6 +606,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_50
       rect:
         serializedVersion: 2
@@ -504,6 +616,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_51
       rect:
         serializedVersion: 2
@@ -513,6 +626,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_52
       rect:
         serializedVersion: 2
@@ -522,6 +636,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_53
       rect:
         serializedVersion: 2
@@ -531,6 +646,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_54
       rect:
         serializedVersion: 2
@@ -540,6 +656,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_55
       rect:
         serializedVersion: 2
@@ -549,6 +666,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_56
       rect:
         serializedVersion: 2
@@ -558,6 +676,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_57
       rect:
         serializedVersion: 2
@@ -567,6 +686,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_58
       rect:
         serializedVersion: 2
@@ -576,6 +696,7 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_59
       rect:
         serializedVersion: 2
@@ -585,5 +706,6 @@ TextureImporter:
         height: 346
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

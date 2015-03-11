@@ -24,8 +24,8 @@ public class portalScript : MonoBehaviour {
 			for(int i = 0;i < allEnemies.Length; i++){
 				Destroy(allEnemies[i]);
 			}
-			audio.Play();
-			if(!audio.isPlaying){
+			GetComponent<AudioSource>().Play();
+			if(!GetComponent<AudioSource>().isPlaying){
 				Destroy(this.gameObject);
 			}
 		}

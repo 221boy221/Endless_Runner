@@ -21,7 +21,7 @@ public class movingBack : MonoBehaviour {
 		if(pos > 1.0f)
 			pos = 0f;
 
-		renderer.material.mainTextureOffset = new Vector2(pos,0);
+		GetComponent<Renderer>().material.mainTextureOffset = new Vector2(pos,0);
 	}
 	
 }

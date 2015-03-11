@@ -41,7 +41,7 @@ public class BackgroundSwithcing : MonoBehaviour {
 
 	public void changeBackgroundMusic(){
 		float randomPitch = Random.Range (0.98f, 1.1f);
-		audio.pitch = randomPitch; 
+		GetComponent<AudioSource>().pitch = randomPitch; 
 	}
 
 	public void changeLevel(){

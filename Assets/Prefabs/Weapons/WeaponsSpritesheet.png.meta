@@ -1,6 +1,21 @@
 fileFormatVersion: 2
 guid: c5f82245daa9be94f94f5e92947014a0
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: The_Weapons_verbeterd_0
+    21300002: The_Weapons_verbeterd_1
+    21300004: The_Weapons_verbeterd_2
+    21300006: The_Weapons_verbeterd_3
+    21300008: The_Weapons_verbeterd_4
+    21300010: The_Weapons_verbeterd_5
+    21300012: The_Weapons_verbeterd_6
+    21300014: The_Weapons_verbeterd_7
+    21300016: The_Weapons_verbeterd_8
+    21300018: The_Weapons_verbeterd_9
+    21300020: The_Weapons_verbeterd_10
+    21300022: The_Weapons_verbeterd_11
+    21300024: The_Weapons_verbeterd_12
+    21300026: The_Weapons_verbeterd_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +50,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +70,7 @@ TextureImporter:
         height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_1
       rect:
         serializedVersion: 2
@@ -63,6 +80,7 @@ TextureImporter:
         height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_2
       rect:
         serializedVersion: 2
@@ -72,6 +90,7 @@ TextureImporter:
         height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_3
       rect:
         serializedVersion: 2
@@ -81,6 +100,7 @@ TextureImporter:
         height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_4
       rect:
         serializedVersion: 2
@@ -90,6 +110,7 @@ TextureImporter:
         height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_5
       rect:
         serializedVersion: 2
@@ -99,6 +120,7 @@ TextureImporter:
         height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_6
       rect:
         serializedVersion: 2
@@ -108,6 +130,7 @@ TextureImporter:
         height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_7
       rect:
         serializedVersion: 2
@@ -117,6 +140,7 @@ TextureImporter:
         height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_8
       rect:
         serializedVersion: 2
@@ -126,6 +150,7 @@ TextureImporter:
         height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_9
       rect:
         serializedVersion: 2
@@ -135,6 +160,7 @@ TextureImporter:
         height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_10
       rect:
         serializedVersion: 2
@@ -144,6 +170,7 @@ TextureImporter:
         height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_11
       rect:
         serializedVersion: 2
@@ -153,6 +180,7 @@ TextureImporter:
         height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_12
       rect:
         serializedVersion: 2
@@ -162,6 +190,7 @@ TextureImporter:
         height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: The_Weapons_verbeterd_13
       rect:
         serializedVersion: 2
@@ -171,5 +200,6 @@ TextureImporter:
         height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

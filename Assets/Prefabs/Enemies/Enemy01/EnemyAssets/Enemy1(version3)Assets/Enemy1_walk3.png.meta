@@ -1,6 +1,26 @@
 fileFormatVersion: 2
 guid: ffc7c9076f6a77a4b954f4ac91c23ce4
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemy1_walk3_0
+    21300002: Enemy1_walk3_1
+    21300004: Enemy1_walk3_2
+    21300006: Enemy1_walk3_3
+    21300008: Enemy1_walk3_4
+    21300010: Enemy1_walk3_5
+    21300012: Enemy1_walk3_6
+    21300014: Enemy1_walk3_7
+    21300016: Enemy1_walk3_8
+    21300018: Enemy1_walk3_9
+    21300020: Enemy1_walk3_10
+    21300022: Enemy1_walk3_11
+    21300024: Enemy1_walk3_12
+    21300026: Enemy1_walk3_13
+    21300028: Enemy1_walk3_14
+    21300030: Enemy1_walk3_15
+    21300032: Enemy1_walk3_16
+    21300034: Enemy1_walk3_17
+    21300036: Enemy1_walk3_18
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +75,7 @@ TextureImporter:
         height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_1
       rect:
         serializedVersion: 2
@@ -63,6 +85,7 @@ TextureImporter:
         height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_2
       rect:
         serializedVersion: 2
@@ -72,6 +95,7 @@ TextureImporter:
         height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_3
       rect:
         serializedVersion: 2
@@ -81,6 +105,7 @@ TextureImporter:
         height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_4
       rect:
         serializedVersion: 2
@@ -90,6 +115,7 @@ TextureImporter:
         height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_5
       rect:
         serializedVersion: 2
@@ -99,6 +125,7 @@ TextureImporter:
         height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_6
       rect:
         serializedVersion: 2
@@ -108,6 +135,7 @@ TextureImporter:
         height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_7
       rect:
         serializedVersion: 2
@@ -117,6 +145,7 @@ TextureImporter:
         height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_8
       rect:
         serializedVersion: 2
@@ -126,6 +155,7 @@ TextureImporter:
         height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_9
       rect:
         serializedVersion: 2
@@ -135,6 +165,7 @@ TextureImporter:
         height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_10
       rect:
         serializedVersion: 2
@@ -144,6 +175,7 @@ TextureImporter:
         height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_11
       rect:
         serializedVersion: 2
@@ -153,6 +185,7 @@ TextureImporter:
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_12
       rect:
         serializedVersion: 2
@@ -162,6 +195,7 @@ TextureImporter:
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_13
       rect:
         serializedVersion: 2
@@ -171,6 +205,7 @@ TextureImporter:
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_14
       rect:
         serializedVersion: 2
@@ -180,6 +215,7 @@ TextureImporter:
         height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_15
       rect:
         serializedVersion: 2
@@ -189,6 +225,7 @@ TextureImporter:
         height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_16
       rect:
         serializedVersion: 2
@@ -198,6 +235,7 @@ TextureImporter:
         height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_17
       rect:
         serializedVersion: 2
@@ -207,6 +245,7 @@ TextureImporter:
         height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy1_walk3_18
       rect:
         serializedVersion: 2
@@ -216,5 +255,6 @@ TextureImporter:
         height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

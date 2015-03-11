@@ -1,6 +1,14 @@
 fileFormatVersion: 2
 guid: 555ab631c0226274593df378352114c4
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Purple_bullet_animation_0
+    21300002: Purple_bullet_animation_2
+    21300004: Purple_bullet_animation_3
+    21300006: Purple_bullet_animation_4
+    21300008: Purple_bullet_animation_5
+    21300010: Purple_bullet_animation_6
+    21300012: Purple_bullet_animation_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +43,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +63,7 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Purple_bullet_animation_2
       rect:
         serializedVersion: 2
@@ -63,6 +73,7 @@ TextureImporter:
         height: 17
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Purple_bullet_animation_3
       rect:
         serializedVersion: 2
@@ -72,6 +83,7 @@ TextureImporter:
         height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Purple_bullet_animation_4
       rect:
         serializedVersion: 2
@@ -81,6 +93,7 @@ TextureImporter:
         height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Purple_bullet_animation_5
       rect:
         serializedVersion: 2
@@ -90,6 +103,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Purple_bullet_animation_6
       rect:
         serializedVersion: 2
@@ -99,6 +113,7 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Purple_bullet_animation_7
       rect:
         serializedVersion: 2
@@ -108,5 +123,6 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
