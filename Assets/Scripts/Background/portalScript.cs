@@ -8,13 +8,14 @@ public class portalScript : MonoBehaviour {
 	BackgroundSwithcing backgroundswitch;
 
 	GameObject[] allEnemies;
+    public float speed = 1f;
 
 	void Awake(){
 		backgroundswitch = GameObject.FindGameObjectWithTag("GameController").GetComponent<BackgroundSwithcing>();
 	}
 
 	void Update(){
-		transform.Translate (new Vector2(-0.9f,0)*Time.deltaTime,Space.World);
+		transform.Translate (new Vector2(-speed, 0) * Time.deltaTime, Space.World);
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {

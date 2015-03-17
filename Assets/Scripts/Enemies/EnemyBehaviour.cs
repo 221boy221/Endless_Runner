@@ -55,9 +55,10 @@ public class EnemyBehaviour : MonoBehaviour {
 
 		if (nextTransform != null && !tfm) {
 			tfm = true;
+            /*
 			Vector2 offset = new Vector2(transform.position.x,transform.position.y + 0.15f);
 			transform.position = offset;
-
+            */
 			anim.Play("EnemyTransformation1");
 			GetComponent<AudioSource>().clip = transformSound;
 			GetComponent<AudioSource>().Play ();

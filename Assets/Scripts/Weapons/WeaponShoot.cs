@@ -56,7 +56,7 @@ public class WeaponShoot : MonoBehaviour {
                 Reload();
             }
         // Buttom R & is able to reload:
-        } else if (Input.GetKeyDown(KeyCode.R) && !reloading) {
+        } else if (Input.GetKeyDown(KeyCode.R) && !reloading && ammo < _maxAmmo) {
             Reload();
         }
     }
@@ -84,10 +84,7 @@ public class WeaponShoot : MonoBehaviour {
 
         // The only possible way to have upgraded one of these is by having opened the pause menu.
         ApplyUpgrades();
-    }
-
-    public void UpdateUI() {
-        txtAmmo.text = "Ammo: " + ammo + " / " + _maxAmmo;
+        UpdateUI();
     }
 
     public void ApplyUpgrades() {
@@ -103,10 +100,10 @@ public class WeaponShoot : MonoBehaviour {
                 _fireRate = 0.1f;
                 break;
             case 3:
-                _fireRate = 0.05f;
+                _fireRate = 0.75f;
                 break;
             default:
-                _fireRate = 0.05f;
+                _fireRate = 0.75f;
                 break;
         }
         // Max Ammo for the weapon
@@ -127,5 +124,9 @@ public class WeaponShoot : MonoBehaviour {
                 _maxAmmo = 15;
                 break;
         }
+    }
+    
+    public void UpdateUI() {
+        txtAmmo.text = "Ammo: " + ammo + " / " + _maxAmmo;
     }
 }

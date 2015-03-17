@@ -8,10 +8,11 @@ public class GamePause : MonoBehaviour {
 
     public GameObject pauseScreen;
     public PlayerData playerData;
+    /*
     public Text textFR;
     public Text textDmg;
     public Text textAmmo;
-
+    */
     void Awake() {
         if (Time.timeScale == 0) {
             Time.timeScale = 1;
@@ -40,11 +41,13 @@ public class GamePause : MonoBehaviour {
 
     void ToggleMenu() {
         pauseScreen.SetActive(!pauseScreen.activeSelf);
+        /*
         if (pauseScreen.activeSelf == true) {
             textFR.text = "Fire Rate - Lvl " + playerData.fireRateLvl;
             textDmg.text = "Damage - Lvl " + playerData.damageLvl;
             textAmmo.text = "Ammo - Lvl " + playerData.ammoLvl;
         }
+        */
     }
 
     // For the UI

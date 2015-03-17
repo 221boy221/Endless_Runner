@@ -76,7 +76,37 @@ PlayerSettings:
     Others: 0
   bundleIdentifier: com.Company.ProductName
   bundleVersion: 1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 2800000, guid: 03dfa3311fd274a4e8df7bc990c8c8e1, type: 3}
+  - {fileID: 2800000, guid: 2d63d90281c311c4480bb1db2fc77f94, type: 3}
+  - {fileID: 2800000, guid: d5c8f4d276461b8408f1db355a6728c4, type: 3}
+  - {fileID: 2800000, guid: 9b58c4cb4f96675469ef00b5d9664af7, type: 3}
+  - {fileID: 2800000, guid: e96f828753a7c234baa2adcb88717cee, type: 3}
+  - {fileID: 2800000, guid: 9cb662a60e0fc0c479a3894fa67962a8, type: 3}
+  - {fileID: 2800000, guid: fa4ff7962de796a4ab550614fd07b989, type: 3}
+  - {fileID: 2800000, guid: d2653695345277842a08c65dbe351529, type: 3}
+  - {fileID: 2800000, guid: ecebe392762f3cd4e95be968bc916fc0, type: 3}
+  - {fileID: 2800000, guid: 84c2c5b9d049b96439c46140fb68cdb3, type: 3}
+  - {fileID: 2800000, guid: f5d3a66e677afbb46a36c51da1c3328c, type: 3}
+  - {fileID: 2800000, guid: d0233ec83eafb6547be8c80fd79ce334, type: 3}
+  - {fileID: 2800000, guid: 558489cd055744b40b845736f90fa107, type: 3}
+  - {fileID: 2800000, guid: 8c520fdb52af1e84bbf1bc5b36bf8c3c, type: 3}
+  - {fileID: 2800000, guid: d1f4176e801f75b40a94e0448fadea7a, type: 3}
+  - {fileID: 2800000, guid: 403a165ebeee6254f9232f9bf229adbd, type: 3}
+  - {fileID: 2800000, guid: 9441800c7e5895b4797578e929203059, type: 3}
+  - {fileID: 2800000, guid: a80b848815755654397e8822760a4dff, type: 3}
+  - {fileID: 2800000, guid: 9c2611c902c5150409acc597ae4452c1, type: 3}
+  - {fileID: 2800000, guid: 2e1207233346d8a4987f40e2e038c11e, type: 3}
+  - {fileID: 2800000, guid: 3a64c3b07d2e9cd43b9fc7a176370b88, type: 3}
+  - {fileID: 2800000, guid: cefb7239b5ae812418531225a17c1656, type: 3}
+  - {fileID: 2800000, guid: 51961c3bed1b30e499eb678bde25f952, type: 3}
+  - {fileID: 2800000, guid: 561bff23de239fa4ea4d45aa842e6e2f, type: 3}
+  - {fileID: 2800000, guid: f6d5d55a4ce496f41b80d00f292727d1, type: 3}
+  - {fileID: 2800000, guid: 85f1d3e14cda5624aaf30553a4fb2946, type: 3}
+  - {fileID: 2800000, guid: 2170340a8cccd7e439a24ea0f6648d24, type: 3}
+  - {fileID: 2800000, guid: 66bfb0a1811cfcf42886d700474bfbdf, type: 3}
+  - {fileID: 2800000, guid: 8c14af769eb82494a8bbd5f7a73197ad, type: 3}
+  - {fileID: 2800000, guid: cfb44175c17f67d48bec5ba3d63d2774, type: 3}
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0

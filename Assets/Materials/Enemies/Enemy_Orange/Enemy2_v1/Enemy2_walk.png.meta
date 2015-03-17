@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: af9a7c4310d4fc3469a399118ddba580
+timeCreated: 1426587065
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Enemy2_walk_0
@@ -29,9 +31,12 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 4096
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: 1
@@ -39,6 +44,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
@@ -63,8 +69,8 @@ TextureImporter:
         y: 425
         width: 145
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_walk_1
       rect:
@@ -73,7 +79,7 @@ TextureImporter:
         y: 425
         width: 143
         height: 82
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_walk_2
@@ -83,7 +89,7 @@ TextureImporter:
         y: 426
         width: 142
         height: 86
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_walk_3
@@ -93,7 +99,7 @@ TextureImporter:
         y: 340
         width: 140
         height: 84
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_walk_4
@@ -103,8 +109,8 @@ TextureImporter:
         y: 340
         width: 140
         height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_walk_5
       rect:
@@ -113,7 +119,7 @@ TextureImporter:
         y: 340
         width: 140
         height: 84
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_walk_6
@@ -123,7 +129,7 @@ TextureImporter:
         y: 252
         width: 141
         height: 83
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_walk_7
@@ -133,7 +139,7 @@ TextureImporter:
         y: 251
         width: 143
         height: 82
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_walk_8
@@ -143,8 +149,10 @@ TextureImporter:
         y: 250
         width: 146
         height: 81
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

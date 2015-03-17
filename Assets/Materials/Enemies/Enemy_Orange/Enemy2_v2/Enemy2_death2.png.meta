@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: ffc7c9076f6a77a4b954f4ac91c23ce4
-timeCreated: 1426601380
+guid: 1450eeb425379304c80d78e16beece2b
+timeCreated: 1426599573
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Enemy1_walk3_0
-    21300002: Enemy1_walk3_1
-    21300004: Enemy1_walk3_2
-    21300006: Enemy1_walk3_3
-    21300008: Enemy1_walk3_4
-    21300010: Enemy1_walk3_5
-    21300012: Enemy1_walk3_6
-    21300014: Enemy1_walk3_7
-    21300016: Enemy1_walk3_8
-    21300018: Enemy1_walk3_9
-    21300020: Enemy1_walk3_10
-    21300022: Enemy1_walk3_11
-    21300024: Enemy1_walk3_12
-    21300026: Enemy1_walk3_13
-    21300028: Enemy1_walk3_14
-    21300030: Enemy1_walk3_15
-    21300032: Enemy1_walk3_16
-    21300034: Enemy1_walk3_17
-    21300036: Enemy1_walk3_18
+    21300000: Enemy2_death2_0
+    21300002: Enemy2_death2_1
+    21300004: Enemy2_death2_2
+    21300006: Enemy2_death2_3
+    21300008: Enemy2_death2_5
+    21300010: Enemy2_death2_6
+    21300012: Enemy2_death2_7
+    21300014: Enemy2_death2_8
+    21300016: Enemy2_death2_10
+    21300018: Enemy2_death2_11
+    21300020: Enemy2_death2_12
+    21300022: Enemy2_death2_13
+    21300024: Enemy2_death2_4
+    21300026: Enemy2_death2_9
+    21300028: Enemy2_death2_14
+    21300030: Enemy2_death2_15
+    21300032: Enemy2_death2_16
+    21300034: Enemy2_death2_17
+    21300036: Enemy2_death2_18
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -46,7 +46,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 4096
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: 1
@@ -72,193 +72,193 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: Enemy1_walk3_0
+    - name: Enemy2_death2_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1878
-        width: 337
-        height: 148
+        x: 2
+        y: 866
+        width: 210
+        height: 155
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_1
+    - name: Enemy2_death2_1
       rect:
         serializedVersion: 2
-        x: 358
-        y: 1876
-        width: 338
+        x: 212
+        y: 866
+        width: 210
         height: 155
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_2
+    - name: Enemy2_death2_2
       rect:
         serializedVersion: 2
-        x: 706
-        y: 1878
-        width: 338
-        height: 156
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_3
-      rect:
-        serializedVersion: 2
-        x: 1054
-        y: 1880
-        width: 338
-        height: 156
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_4
-      rect:
-        serializedVersion: 2
-        x: 1402
-        y: 1880
-        width: 338
-        height: 157
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_5
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 1710
-        width: 338
+        x: 422
+        y: 866
+        width: 210
         height: 155
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_6
+    - name: Enemy2_death2_3
       rect:
         serializedVersion: 2
-        x: 358
-        y: 1708
-        width: 338
-        height: 156
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_7
-      rect:
-        serializedVersion: 2
-        x: 706
-        y: 1707
-        width: 338
+        x: 632
+        y: 866
+        width: 210
         height: 155
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_8
+    - name: Enemy2_death2_4
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 1705
-        width: 337
-        height: 154
+        x: 2
+        y: 711
+        width: 210
+        height: 155
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_9
+    - name: Enemy2_death2_5
       rect:
         serializedVersion: 2
-        x: 1402
-        y: 1707
-        width: 337
-        height: 148
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_10
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 1534
-        width: 337
-        height: 154
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_11
-      rect:
-        serializedVersion: 2
-        x: 358
-        y: 1535
-        width: 338
-        height: 157
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_12
-      rect:
-        serializedVersion: 2
-        x: 706
-        y: 1538
-        width: 338
+        x: 212
+        y: 711
+        width: 210
         height: 155
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_13
+    - name: Enemy2_death2_6
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 1539
-        width: 338
-        height: 157
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_14
-      rect:
-        serializedVersion: 2
-        x: 1402
-        y: 1540
-        width: 338
+        x: 422
+        y: 711
+        width: 210
         height: 155
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_15
+    - name: Enemy2_death2_7
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1368
-        width: 340
+        x: 632
+        y: 711
+        width: 210
         height: 155
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_16
+    - name: Enemy2_death2_8
       rect:
         serializedVersion: 2
-        x: 358
-        y: 1366
-        width: 338
+        x: 2
+        y: 556
+        width: 210
         height: 155
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_17
+    - name: Enemy2_death2_9
       rect:
         serializedVersion: 2
-        x: 706
-        y: 1364
-        width: 337
-        height: 156
+        x: 212
+        y: 556
+        width: 210
+        height: 155
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Enemy1_walk3_18
+    - name: Enemy2_death2_10
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 1363
-        width: 337
-        height: 152
+        x: 422
+        y: 556
+        width: 210
+        height: 155
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2_death2_11
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 556
+        width: 210
+        height: 155
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2_death2_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 401
+        width: 210
+        height: 155
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2_death2_13
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 401
+        width: 210
+        height: 155
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2_death2_14
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 401
+        width: 210
+        height: 155
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2_death2_15
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 401
+        width: 210
+        height: 155
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2_death2_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 246
+        width: 210
+        height: 155
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2_death2_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 246
+        width: 210
+        height: 155
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy2_death2_18
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 246
+        width: 210
+        height: 155
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

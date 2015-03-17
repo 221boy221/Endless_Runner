@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: b577dc73c9c673e4694840855ea7ec64
+timeCreated: 1426600946
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Redoneportal_0
@@ -114,602 +116,602 @@ TextureImporter:
     - name: Redoneportal_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 3154
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 0
+        y: 3156
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_1
       rect:
         serializedVersion: 2
-        x: 492
-        y: 3154
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 486
+        y: 3156
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_2
       rect:
         serializedVersion: 2
-        x: 976
-        y: 3154
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 972
+        y: 3156
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_3
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 3154
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1458
+        y: 3156
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_4
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 3154
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1944
+        y: 3156
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_5
       rect:
         serializedVersion: 2
-        x: 2439
-        y: 3154
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2430
+        y: 3156
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_6
       rect:
         serializedVersion: 2
-        x: 2927
-        y: 3154
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2916
+        y: 3156
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_7
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2808
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 0
+        y: 2812
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_8
       rect:
         serializedVersion: 2
-        x: 492
-        y: 2808
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 486
+        y: 2812
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_9
       rect:
         serializedVersion: 2
-        x: 976
-        y: 2808
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 972
+        y: 2812
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_10
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 2808
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1458
+        y: 2812
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_11
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 2808
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1944
+        y: 2812
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_12
       rect:
         serializedVersion: 2
-        x: 2439
-        y: 2808
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2430
+        y: 2812
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_13
       rect:
         serializedVersion: 2
-        x: 2927
-        y: 2808
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2916
+        y: 2812
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_14
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2466
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 0
+        y: 2468
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_15
       rect:
         serializedVersion: 2
-        x: 492
-        y: 2466
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 486
+        y: 2468
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_16
       rect:
         serializedVersion: 2
-        x: 976
-        y: 2466
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 972
+        y: 2468
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_17
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 2466
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1458
+        y: 2468
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_18
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 2466
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1944
+        y: 2468
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_19
       rect:
         serializedVersion: 2
-        x: 2439
-        y: 2466
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2430
+        y: 2468
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_20
       rect:
         serializedVersion: 2
-        x: 2927
-        y: 2466
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2916
+        y: 2468
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_21
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2120
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 0
+        y: 2124
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_22
       rect:
         serializedVersion: 2
-        x: 492
-        y: 2120
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 486
+        y: 2124
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_23
       rect:
         serializedVersion: 2
-        x: 976
-        y: 2120
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 972
+        y: 2124
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_24
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 2120
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1458
+        y: 2124
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_25
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 2120
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1944
+        y: 2124
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_26
       rect:
         serializedVersion: 2
-        x: 2439
-        y: 2120
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2430
+        y: 2124
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_27
       rect:
         serializedVersion: 2
-        x: 2927
-        y: 2120
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2916
+        y: 2124
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_28
       rect:
         serializedVersion: 2
-        x: 4
-        y: 1770
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 0
+        y: 1780
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_29
       rect:
         serializedVersion: 2
-        x: 492
-        y: 1770
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 486
+        y: 1780
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_30
       rect:
         serializedVersion: 2
-        x: 976
-        y: 1770
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 972
+        y: 1780
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_31
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 1770
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1458
+        y: 1780
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_32
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 1770
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1944
+        y: 1780
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_33
       rect:
         serializedVersion: 2
-        x: 2439
-        y: 1770
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2430
+        y: 1780
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_34
       rect:
         serializedVersion: 2
-        x: 2927
-        y: 1770
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2916
+        y: 1780
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_35
       rect:
         serializedVersion: 2
-        x: 4
-        y: 1424
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 0
+        y: 1436
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_36
       rect:
         serializedVersion: 2
-        x: 492
-        y: 1424
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 486
+        y: 1436
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_37
       rect:
         serializedVersion: 2
-        x: 976
-        y: 1424
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 972
+        y: 1436
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_38
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 1424
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1458
+        y: 1436
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_39
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 1424
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1944
+        y: 1436
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_40
       rect:
         serializedVersion: 2
-        x: 2439
-        y: 1424
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2430
+        y: 1436
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_41
       rect:
         serializedVersion: 2
-        x: 2927
-        y: 1424
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2916
+        y: 1436
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_42
       rect:
         serializedVersion: 2
-        x: 4
-        y: 1078
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 0
+        y: 1092
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_43
       rect:
         serializedVersion: 2
-        x: 492
-        y: 1078
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 486
+        y: 1092
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_44
       rect:
         serializedVersion: 2
-        x: 976
-        y: 1078
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 972
+        y: 1092
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_45
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 1078
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1458
+        y: 1092
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_46
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 1078
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1944
+        y: 1092
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_47
       rect:
         serializedVersion: 2
-        x: 2439
-        y: 1078
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2430
+        y: 1092
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_48
       rect:
         serializedVersion: 2
-        x: 2927
-        y: 1078
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2916
+        y: 1092
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_49
       rect:
         serializedVersion: 2
-        x: 4
-        y: 732
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 0
+        y: 748
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_50
       rect:
         serializedVersion: 2
-        x: 492
-        y: 732
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 486
+        y: 748
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_51
       rect:
         serializedVersion: 2
-        x: 976
-        y: 732
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 972
+        y: 748
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_52
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 732
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1458
+        y: 748
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_53
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 732
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1944
+        y: 748
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_54
       rect:
         serializedVersion: 2
-        x: 2439
-        y: 732
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2430
+        y: 748
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_55
       rect:
         serializedVersion: 2
-        x: 2927
-        y: 732
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 2916
+        y: 748
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_56
       rect:
         serializedVersion: 2
-        x: 4
-        y: 386
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 0
+        y: 404
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_57
       rect:
         serializedVersion: 2
-        x: 492
-        y: 386
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 486
+        y: 404
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_58
       rect:
         serializedVersion: 2
-        x: 976
-        y: 386
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 972
+        y: 404
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Redoneportal_59
       rect:
         serializedVersion: 2
-        x: 1464
-        y: 386
-        width: 480
-        height: 346
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 1458
+        y: 404
+        width: 486
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 5401ffba26f88d44c96c39d45bae3dfa
+timeCreated: 1426589868
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Enemy2_transform1_0
@@ -32,9 +34,12 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 4096
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: 1
@@ -42,6 +47,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
@@ -66,7 +72,7 @@ TextureImporter:
         y: 888
         width: 145
         height: 79
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_1
@@ -76,7 +82,7 @@ TextureImporter:
         y: 889
         width: 154
         height: 102
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_2
@@ -86,7 +92,7 @@ TextureImporter:
         y: 890
         width: 161
         height: 119
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_3
@@ -96,7 +102,7 @@ TextureImporter:
         y: 890
         width: 164
         height: 129
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_4
@@ -106,7 +112,7 @@ TextureImporter:
         y: 891
         width: 165
         height: 131
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_5
@@ -116,7 +122,7 @@ TextureImporter:
         y: 719
         width: 174
         height: 137
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_6
@@ -126,7 +132,7 @@ TextureImporter:
         y: 718
         width: 174
         height: 138
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_7
@@ -136,7 +142,7 @@ TextureImporter:
         y: 718
         width: 174
         height: 136
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_8
@@ -146,7 +152,7 @@ TextureImporter:
         y: 717
         width: 173
         height: 136
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_9
@@ -156,8 +162,8 @@ TextureImporter:
         y: 715
         width: 173
         height: 137
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_10
       rect:
@@ -166,7 +172,7 @@ TextureImporter:
         y: 551
         width: 173
         height: 130
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Enemy2_transform1_11
@@ -176,8 +182,10 @@ TextureImporter:
         y: 546
         width: 171
         height: 124
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

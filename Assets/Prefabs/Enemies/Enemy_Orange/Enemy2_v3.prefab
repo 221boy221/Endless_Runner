@@ -29,8 +29,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0601949692, y: .304840565, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,9 +59,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: .0299999993}
+  m_Offset: {x: .100000001, y: 1.08000004}
   serializedVersion: 2
-  m_Size: {x: 3.38000011, y: 2.1099999}
+  m_Size: {x: 3.25, y: 2.1099999}
 --- !u!82 &8245444
 AudioSource:
   m_ObjectHideFlags: 1
@@ -170,7 +170,6 @@ MonoBehaviour:
   strength: {fileID: 100000, guid: acb12d9012ce5f34c8fdbf417c88b6e3, type: 2}
   transformSound: {fileID: 8300000, guid: 9e506c31c4fc3b5478e41467ba741a8d, type: 3}
   attackSound: {fileID: 8300000, guid: 298254946deca984a84bf143f3c45f37, type: 3}
-  playerData: {fileID: 0}
 --- !u!114 &11477356
 MonoBehaviour:
   m_ObjectHideFlags: 1
