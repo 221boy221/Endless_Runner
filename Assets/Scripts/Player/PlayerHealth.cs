@@ -1,33 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-// Gemaakt door Boy
+    // Boy Voesten
 
 public class PlayerHealth : MonoBehaviour {
 
-    private float health = 100.0f;
+    private float _health = 100.0f;
 
-    public float GetHealth { 
-        get { return health; } 
-    }
+    public void IncreaseHealth(float points) {
+        _health += points;
 
-    public void TakeDamage(float dmg) {
-        health -= dmg;
-
-        if (health <= 0) {
+        if (_health > 100) {
+            _health = 100;
+        } else if (_health <= 0) {
             Dead();
         }
     }
 
-    public void IncreaseHealth(float hp) {
-        health += hp;
-        if (health > 100) {
-            health = 100;
-        }
+    void Dead() {
+        Application.LoadLevel("gameOver");
     }
     
-    void Dead() {
-		BulletsScript.damage = 50f; 
-        Application.LoadLevel("gameOver");
+    public float GetHealth {
+        get {
+            return _health; 
+        }
+        set {
+            _health = value;
+        }
     }
 }

@@ -2,72 +2,65 @@
 using System.Collections;
 
 // Gemaakt door Ramses
+// Modified by Boy Voesten
 
 public class EnemySpawner : MonoBehaviour {
 
-	public GameObject enemy1;
-	public GameObject enemy2;
-	public GameObject enemy1Num2;
-	public GameObject enemy2Num2;
+    public GameObject spawnPoint;
+    public GameObject[] enemies;
+    public GameObject[] enemiesV2;
+    public GameObject portal;
 
-	public GameObject portal;
+	private int portalCounter;
 
-	int portalCounter;
-
+    // SpawnMultiple before starting to spawn
 	void Start() {
 		Invoke("EnemySpawn",5f);
 	}
 
-	void SpawnEnemy(GameObject EnemyType) {
-		if (EnemyType == enemy1 || EnemyType == enemy2) {
-			Instantiate (EnemyType, new Vector2 (7, 0), this.transform.rotation);
-		} else {
-			Instantiate (EnemyType, new Vector2 (7, 0.15f), this.transform.rotation);
-		}
-	}
-
-	void Spawn2Enemies(GameObject EnemyType1,GameObject EnemyType2){
-			Instantiate(EnemyType1, new Vector2 (7, 0), this.transform.rotation);
-			Instantiate(EnemyType2, new Vector2 (10, 0), this.transform.rotation);
-	}
-
+    // Choose enemy to spawn
 	void EnemySpawn() {
-		int chooseSpawnType = Random.Range (1, 5);
-		int chooseEnemyToSpawn = Random.Range(1, 3);
+		int spawnType = Random.Range (1, 5);
+		int chosenEnemy = Random.Range(0, enemies.Length);
 
-		if (chooseSpawnType == 1) {
-			if (chooseEnemyToSpawn == 1) {
-				SpawnEnemy (enemy1);
-			} else if (chooseEnemyToSpawn == 2) {
-				SpawnEnemy (enemy2);
-			}						
-		} else if (chooseSpawnType == 2) {
-			if (chooseEnemyToSpawn == 1) {
-				Spawn2Enemies (enemy1,enemy2);
-			} else if (chooseEnemyToSpawn == 2) {
-				Spawn2Enemies (enemy2,enemy1);
-			}	
-		} else if (chooseSpawnType == 3) {
-			if (chooseEnemyToSpawn == 1) {
-				SpawnEnemy(enemy1Num2);
-			} else if (chooseEnemyToSpawn == 2) {
-				SpawnEnemy(enemy2Num2);
-			}
-		} else {
-			portalCounter ++;
+        switch (spawnType) {
+            case 1: // Spawn 1 enemy
+                SpawnEnemy(enemies[chosenEnemy]);
+                break;
+            case 2: // Spawn 2 enemies
+                int chosenEnemy2 = Random.Range(0, enemies.Length);
+                StartCoroutine(SpawnMultiple(enemies[chosenEnemy], enemies[chosenEnemy2]));
+                break;
+            case 3: // Spawn 1 enemy v2
+                chosenEnemy = Random.Range(0, enemiesV2.Length);
+                SpawnEnemy(enemiesV2[chosenEnemy]);
+                break;
+            default:
+                SpawnEnemy(enemies[chosenEnemy]);
+                break;
+        }
 
-			if (portalCounter == 5) {
-				portalCounter = 0;
-				Instantiate(portal, new Vector2 (4, 0.48f), this.transform.rotation);
-			} else {
-				if (chooseEnemyToSpawn == 1) {
-					Spawn2Enemies(enemy1,enemy1);
-				} else {
-					Spawn2Enemies(enemy2,enemy2);
-				}
-			}
-		}
-		Invoke("EnemySpawn",Random.Range(5f - (portalCounter/2),7f - (portalCounter/2)));
+        // Portal spawn system
+        portalCounter++;
+        
+        if (portalCounter == 8) {
+            portalCounter = 0;
+            Instantiate(portal, spawnPoint.transform.position, transform.rotation);
+        }
+
+        // Repeat function
+		Invoke("EnemySpawn",  Random.Range(6f - portalCounter / 2, 8f - portalCounter / 2) );
 	}
 
+    // Spawn the given enemy
+    void SpawnEnemy(GameObject enemy) {
+        Instantiate(enemy, spawnPoint.transform.position, transform.rotation);
+    }
+
+    // Spawn the given enemies, with delay in between
+    IEnumerator SpawnMultiple(GameObject enemy, GameObject enemy2) {
+        Instantiate(enemy, spawnPoint.transform.position, transform.rotation);
+        yield return new WaitForSeconds(1f);
+        Instantiate(enemy2, spawnPoint.transform.position, transform.rotation);
+    }
 }

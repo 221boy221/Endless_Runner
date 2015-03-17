@@ -7,36 +7,45 @@ public class BulletsScript : MonoBehaviour {
 
 	public float destroyTime;
 	public float speed;
-	public static float damage = 50.0f;
-
+	public float damage = 50.0f;
     private float damageLvl;
-    private GamePause gamePause;
+    private PlayerData playerData;
 
 	void Start() {
-		Destroy (gameObject, destroyTime); // gameObject inplaats van this want met this verwijder je het script.  Bij de destroy functie geef je wat hij weg moet halen en wanneer.
-        gamePause = GameObject.FindGameObjectWithTag("PauseMenu").GetComponent<GamePause>();
+        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
         UpdateDamage();
+        // Start Destroy timer
+        Destroy(gameObject, destroyTime);
 	}
 	
 	void Update() {
-		this.transform.Translate (Vector2.right * speed * Time.deltaTime); // ik heb ons booger script hiervoor gebruikt. Maar inplaats van Vector3.forward heb ik Vector2.right gebruikt wat hetzelfde effect heeft maar dan in 2D
+		transform.Translate (Vector2.right * speed * Time.deltaTime);
 	}
 
 	// Removes the bullet on touch
     private void OnTriggerEnter2D(Collider2D other) {
 		if (other.transform.tag != "Player") {
-			Destroy(this.gameObject);
+			Destroy (gameObject);
 		}
 	}
 
     public void UpdateDamage() {
-        damageLvl = gamePause.damageLvl;
-        if (damageLvl == 1) {
-            damage = 70.0f;
-        } else if (damageLvl == 2) {
-            damage = 90.0f;
-        } else if (damageLvl == 3) {
-            damage = 110.0f;
+        switch (playerData.damageLvl) {
+            case 0:
+                damage = 50.0f;
+                break;
+            case 1:
+                damage = 70.0f;
+                break;
+            case 2:
+                damage = 90.0f;
+                break;
+            case 3:
+                damage = 110.0f;
+                break;
+            default:
+                damage = 110.0f;
+                break;
         }
     }
 	

@@ -4,6 +4,7 @@ using System.Collections;
 // Gemaakt door Ramses
 
 public class BackgroundSwithcing : MonoBehaviour {
+	
 
 	public GameObject flash;
 	public GameObject[] backgrounds;
@@ -44,7 +45,7 @@ public class BackgroundSwithcing : MonoBehaviour {
 	}
 
 	public void changeLevel(){
-		Instantiate (flash,new Vector3(transform.position.x,transform.position.y,transform.position.z + -3), transform.rotation);
+		Instantiate (flash, new Vector3(transform.position.x, transform.position.y, -6), transform.rotation);
 		Invoke ("chooseBackground", 1.75f);
 		Invoke ("changeBackgroundMusic", 1.75f);
 	}

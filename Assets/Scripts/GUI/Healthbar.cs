@@ -14,6 +14,8 @@ public class Healthbar : MonoBehaviour {
     
     protected bool paused = false;
 
+	
+
 	void Start() {
         playerHealth = GameObject.FindGameObjectWithTag("PlayerHealthUI").GetComponent<PlayerHealth>();
         enemyHealth = GetComponent<EnemyBehaviour>();
@@ -34,15 +36,13 @@ public class Healthbar : MonoBehaviour {
 
 	void OnGUI() {
         if (!paused) {
-            // HP bg
             GUI.DrawTexture(new Rect(position.x - 45, (Screen.height - position.y) + (position.y / 2), hbBackground.width / 7, hbBackground.height / 5), hbBackground);
-            // HP bar
             if (gameObject.tag == "Player") {
                 GUI.DrawTexture(new Rect(position.x - 40, ((Screen.height - position.y) + (position.y / 2) + 1), (hpBar.width / 7) / (maxHealth / playerHealth.GetHealth), hpBar.height / 5), hpBar);
             } else {
                 GUI.DrawTexture(new Rect(position.x - 40, ((Screen.height - position.y) + (position.y / 2) + 1), (hpBar.width / 7) / (maxHealth / enemyHealth.Health), hpBar.height / 5), hpBar);
             }
-            // HP Overlay
+
             GUI.DrawTexture(new Rect(position.x - 45, ((Screen.height - position.y) + (position.y / 2)), hpOverlay.width / 7, hpOverlay.height / 5), hpOverlay);
         }       
 	}
